@@ -1,10 +1,11 @@
 # Campaign Dashboard — reconciling messy retail data into an automated Streamlit dashboard
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-campaign--dashboard.streamlit.app-06C755?style=flat-square&logo=streamlit&logoColor=white)](https://campaign-dashboard-hojogusrcfkpzhow56trpd.streamlit.app/)
 ![Python](https://img.shields.io/badge/Python-3.14-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-3.0-150458?style=flat-square&logo=pandas&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.62-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/License-MIT-3DA639?style=flat-square&logo=opensourceinitiative&logoColor=white)
-![Progress](https://img.shields.io/badge/Progress-In%20Progress-yellow?style=flat-square)
+![Progress](https://img.shields.io/badge/Progress-Complete-06C755?style=flat-square)
 
 A retail business rarely has one clean database — it has a CRM, a POS system, and an ad platform
 export, each maintained by a different team, each with its own naming conventions, date formats,
@@ -186,8 +187,9 @@ Overview/Trend/Segment tabs.
 **Result:** verified locally with `streamlit run app.py` — all 5 tabs render, 6 charts + 5 tables
 populate, zero exceptions and zero browser console errors.
 
-### Step 7: Deployment *(in progress)*
-Push to GitHub and deploy via Streamlit Community Cloud.
+### Step 7: Deployment *(done)*
+Pushed to GitHub and deployed via Streamlit Community Cloud:
+**[campaign-dashboard-hojogusrcfkpzhow56trpd.streamlit.app](https://campaign-dashboard-hojogusrcfkpzhow56trpd.streamlit.app/)**
 
 **Gotcha hit during first deploy:** Streamlit Community Cloud does not honor a `runtime.txt`
 Python-version pin — it always provisions whatever its current default Python is (3.14 as of this
@@ -203,7 +205,7 @@ runs Python 3.14 to match Cloud and avoid this drifting again.
 
 - [x] Stage 1 — Data ingestion & exploratory data analysis (3 raw datasets, 12,406 rows, quality issues catalogued)
 - [x] Stage 2 — Cleaning, reconciliation & pipeline automation (`src/cleaning.py`, `src/reconcile.py`, `scripts/run_pipeline.py`)
-- [x] Stage 3 — Streamlit dashboard build (`app.py`); deployment (Step 7) still planned
+- [x] Stage 3 — Streamlit dashboard build & deployment (`app.py`, live on Streamlit Community Cloud)
 
-`scripts/generate_synthetic_data.py`, `scripts/run_pipeline.py`, and `app.py` all run end-to-end
-today; only deployment to Streamlit Community Cloud is left.
+All 7 steps are complete and live:
+**[campaign-dashboard-hojogusrcfkpzhow56trpd.streamlit.app](https://campaign-dashboard-hojogusrcfkpzhow56trpd.streamlit.app/)**
