@@ -11,13 +11,23 @@ from pathlib import Path
 
 import pandas as pd
 import plotly.express as px
-import plotly.graph_objects as go
 import streamlit as st
 
 DATA_DIR = Path(__file__).resolve().parent / "data" / "processed"
 
+LINE_GREEN = "#06C755"
+LINE_GREY = "#C4C4C4"
+CHART_FONT = "Prompt, sans-serif"
+GREEN_RAMP = ["#06C755", "#00893D", "#7ED9A8", "#003A1F", "#B6EFCB", "#00B14F"]
+
 st.set_page_config(page_title="Campaign Dashboard", layout="wide")
 px.defaults.template = "plotly_white"
+px.defaults.color_discrete_sequence = GREEN_RAMP
+
+
+def style_fig(fig):
+    fig.update_layout(template="plotly_white", font_family=CHART_FONT)
+    return fig
 
 
 @st.cache_data
@@ -114,8 +124,11 @@ with tab_trend:
         .groupby("date", as_index=False)["net_amount_thb"]
         .sum()
     )
-    fig = px.line(daily, x="date", y="net_amount_thb", labels={"net_amount_thb": "Revenue (THB)", "date": "Date"})
-    st.plotly_chart(fig, width="stretch")
+    fig = px.line(
+        daily, x="date", y="net_amount_thb", labels={"net_amount_thb": "Revenue (THB)", "date": "Date"},
+        color_discrete_sequence=[LINE_GREEN],
+    )
+    st.plotly_chart(style_fig(fig), width="stretch")
 
     st.subheader("Daily revenue: attributed vs. non-attributed")
     daily_attr = (
@@ -129,12 +142,13 @@ with tab_trend:
     fig2 = px.area(
         daily_attr, x="date", y="net_amount_thb", color="attributed",
         labels={"net_amount_thb": "Revenue (THB)", "date": "Date", "attributed": ""},
+        color_discrete_map={"Attributed": LINE_GREEN, "Not attributed": LINE_GREY},
     )
-    st.plotly_chart(fig2, width="stretch")
+    st.plotly_chart(style_fig(fig2), width="stretch")
 
 # --- Campaign ROI -----------------------------------------------------------
 with tab_roi:
-    st.subheader("Sales funnel")
+    st.subheader("Ad-reported conversions vs. real orders")
     ad_filtered = ad_clean[
         (ad_clean["report_date"].dt.date >= start_date)
         & (ad_clean["report_date"].dt.date <= end_date)
@@ -142,41 +156,60 @@ with tab_roi:
     ]
     attributed_sales = sales_no_returns[sales_no_returns["campaign_id"].isin(selected_campaigns)]
 
-    funnel_stages = ["Impressions", "Clicks", "Conversions (ad-reported)", "Orders (POS-attributed)"]
-    funnel_values = [
-        int(ad_filtered["impressions"].sum()),
-        int(ad_filtered["clicks"].sum()),
+    compare_labels = ["Conversions (ad-reported)", "Orders (POS-attributed)"]
+    compare_values = [
         int(ad_filtered["conversions_reported"].sum()),
         int(attributed_sales["transaction_id"].nunique()),
     ]
+    match_pct = (compare_values[1] / compare_values[0] * 100) if compare_values[0] else float("nan")
     funnel_revenue = attributed_sales["net_amount_thb"].sum()
 
-    fig_funnel = go.Figure(
-        go.Funnel(y=funnel_stages, x=funnel_values, textinfo="value+percent initial")
-    )
-    fig_funnel.update_layout(template="plotly_white")
-    st.plotly_chart(fig_funnel, width="stretch")
+    col_chart, col_stat = st.columns([3, 1])
+    with col_chart:
+        fig_compare = px.bar(
+            x=compare_labels, y=compare_values, labels={"x": "", "y": "Count"},
+            color=compare_labels,
+            color_discrete_map={compare_labels[0]: LINE_GREY, compare_labels[1]: LINE_GREEN},
+        )
+        fig_compare.update_layout(showlegend=False)
+        st.plotly_chart(style_fig(fig_compare), width="stretch")
+    with col_stat:
+        st.markdown(
+            f"""
+            <div style="text-align:center; padding-top:3rem;">
+                <div style="font-family:{CHART_FONT}; font-size:3rem; font-weight:700;
+                            color:{LINE_GREEN};">{match_pct:.0f}%</div>
+                <div style="font-family:{CHART_FONT}; font-size:0.9rem; color:#666;">
+                    of ad-reported conversions<br>match a real POS order</div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
     st.caption(
-        f"Those {funnel_values[-1]:,} POS-attributed orders generated ฿{funnel_revenue:,.0f} in "
-        "revenue. Note the drop from ad-reported conversions to POS-attributed orders — the ad "
-        "platform's own pixel-tracked conversions are noisy and don't reconcile 1:1 with real sales."
+        f"Those {compare_values[1]:,} POS-attributed orders generated ฿{funnel_revenue:,.0f} in "
+        "revenue. The gap shows the ad platform's own pixel-tracked conversions are noisy and "
+        "don't reconcile 1:1 with real sales."
     )
 
     st.subheader("ROAS by campaign")
     fig3 = px.bar(
         campaign_summary.sort_values("roas"), x="roas", y="campaign_id", orientation="h",
         labels={"roas": "ROAS (revenue / spend)", "campaign_id": ""},
+        color_discrete_sequence=[LINE_GREEN],
     )
-    st.plotly_chart(fig3, width="stretch")
+    st.plotly_chart(style_fig(fig3), width="stretch")
 
     st.subheader("Spend vs. attributed revenue")
     spend_vs_rev = campaign_summary.melt(
         id_vars="campaign_id", value_vars=["ad_spend_thb", "attributed_revenue_thb"],
         var_name="metric", value_name="thb",
     )
-    fig4 = px.bar(spend_vs_rev, x="campaign_id", y="thb", color="metric", barmode="group",
-                  labels={"thb": "THB", "campaign_id": "", "metric": ""})
-    st.plotly_chart(fig4, width="stretch")
+    fig4 = px.bar(
+        spend_vs_rev, x="campaign_id", y="thb", color="metric", barmode="group",
+        labels={"thb": "THB", "campaign_id": "", "metric": ""},
+        color_discrete_map={"ad_spend_thb": LINE_GREY, "attributed_revenue_thb": LINE_GREEN},
+    )
+    st.plotly_chart(style_fig(fig4), width="stretch")
 
 # --- Customer Segments -------------------------------------------------------
 with tab_segments:
@@ -186,15 +219,21 @@ with tab_segments:
         by_segment = sales_no_returns.dropna(subset=["customer_segment"]).groupby(
             "customer_segment", as_index=False
         )["net_amount_thb"].sum()
-        fig5 = px.pie(by_segment, names="customer_segment", values="net_amount_thb")
-        st.plotly_chart(fig5, width="stretch")
+        fig5 = px.pie(
+            by_segment, names="customer_segment", values="net_amount_thb",
+            color_discrete_sequence=GREEN_RAMP,
+        )
+        st.plotly_chart(style_fig(fig5), width="stretch")
     with col2:
         st.subheader("Revenue by region")
         by_region = sales_no_returns.dropna(subset=["region"]).groupby(
             "region", as_index=False
         )["net_amount_thb"].sum().sort_values("net_amount_thb", ascending=False)
-        fig6 = px.bar(by_region, x="region", y="net_amount_thb", labels={"net_amount_thb": "Revenue (THB)"})
-        st.plotly_chart(fig6, width="stretch")
+        fig6 = px.bar(
+            by_region, x="region", y="net_amount_thb", labels={"net_amount_thb": "Revenue (THB)"},
+            color_discrete_sequence=[LINE_GREEN],
+        )
+        st.plotly_chart(style_fig(fig6), width="stretch")
 
     st.caption(
         "Segment/region are only known for transactions linked to a CRM customer — walk-in sales "
