@@ -247,6 +247,10 @@ def generate_pos_transactions(crm_df, n_base=5000):
     max_valid_id = crm_df["cust_id"].str.replace("C-", "", regex=False).astype(int).max()
 
     rows = []
+    # ground truth for the ad-platform generator: real attributed orders per
+    # (campaign short_code, day_idx), counted before the duplicate-row
+    # injection below (matching what the cleaning pipeline dedupes down to)
+    attributed_order_counts = {}
     for day_idx, date in enumerate(DATES):
         # base transaction volume per day
         daily_txn_count = np.random.poisson(lam=n_base / N_DAYS)
@@ -283,6 +287,8 @@ def generate_pos_transactions(crm_df, n_base=5000):
             if active_campaigns and random.random() < 0.4:
                 raw_code = random.choice(active_campaigns)["short_code"]
                 campaign_code = random_campaign_code_str(raw_code)
+                key = (raw_code, day_idx)
+                attributed_order_counts[key] = attributed_order_counts.get(key, 0) + 1
 
             # returns: small share of rows have negative qty
             qty = random.randint(1, 5)
@@ -331,7 +337,7 @@ def generate_pos_transactions(crm_df, n_base=5000):
     n_dupes = int(len(df) * 0.01)
     dupe_rows = df.sample(n=n_dupes, random_state=3).copy()
     df = pd.concat([df, dupe_rows], ignore_index=True).sample(frac=1, random_state=4).reset_index(drop=True)
-    return df
+    return df, attributed_order_counts
 
 
 # ---------------------------------------------------------------------------
@@ -355,7 +361,7 @@ def maybe_thousands_str(n: int) -> str:
     return str(n)
 
 
-def generate_ad_platform_report():
+def generate_ad_platform_report(attributed_order_counts):
     rows = []
     for campaign in CAMPAIGNS:
         start_idx, end_idx = campaign["active_days"]
@@ -366,6 +372,12 @@ def generate_ad_platform_report():
             if random.random() < 0.05:
                 continue
 
+            # real POS-attributed orders for this campaign/day, split evenly
+            # across whichever platforms ran that day - the ground truth that
+            # conversions_reported below over-counts relative to
+            real_orders_today = attributed_order_counts.get((campaign["short_code"], day_idx), 0)
+            real_orders_per_platform = real_orders_today / len(campaign["platforms"])
+
             for platform in campaign["platforms"]:
                 platform_str = random.choice(PLATFORM_CASING_VARIANTS[platform])
 
@@ -374,8 +386,11 @@ def generate_ad_platform_report():
                 impressions = int(spend * random.uniform(15, 25))
                 clicks = int(impressions * random.uniform(0.01, 0.04))
                 ctr = round((clicks / impressions) * 100, 2) if impressions else 0.0
-                # pixel-tracked conversions - intentionally noisy vs. real POS sales
-                conversions_reported = int(clicks * random.uniform(0.03, 0.09))
+                # pixel-tracked conversions - noisy vs. real POS sales, but
+                # grounded in the real order count (platforms typically
+                # over-count conversions by 1.3x-2x vs. server-side truth)
+                overcount_factor = random.uniform(1.3, 2.0)
+                conversions_reported = int(round(real_orders_per_platform * overcount_factor))
 
                 # currency bug: a few rows report spend in USD without converting
                 currency = "USD" if random.random() < 0.03 else "THB"
@@ -446,8 +461,8 @@ def generate_ad_platform_report():
 
 def main():
     crm_df = generate_crm_customers(n=800)
-    pos_df = generate_pos_transactions(crm_df, n_base=5000)
-    ad_df = generate_ad_platform_report()
+    pos_df, attributed_order_counts = generate_pos_transactions(crm_df, n_base=5000)
+    ad_df = generate_ad_platform_report(attributed_order_counts)
 
     crm_df.to_csv(OUT_DIR / "crm_customers.csv", index=False)
     pos_df.to_csv(OUT_DIR / "pos_transactions.csv", index=False)

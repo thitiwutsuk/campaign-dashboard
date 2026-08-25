@@ -171,6 +171,10 @@ per-campaign ROI table (ad spend vs. attributed sales, returns excluded).
   sync, flagged not dropped); all `campaign_code` values mapped cleanly to a `campaign_id`.
 - Per-campaign ROAS ranges from ~9x (`FLASH_SALE_JULY_2024`) to ~36x
   (`NEW_USER_ACQUISITION_Q3`) — see `data/processed/campaign_summary.csv` for the full table.
+- Only **61%** of ad-reported `conversions_reported` reconcile to a real POS-attributed order
+  (7,020 reported vs. 4,307 real) — `scripts/generate_synthetic_data.py` grounds reported
+  conversions in the true order count per campaign/day with a randomized 1.3x–2x over-count factor,
+  simulating the pixel-tracking overcounting that server-side reconciliation is meant to catch.
 
 ### Step 5: Pipeline automation *(done)*
 `scripts/run_pipeline.py` wraps Steps 3–4 into a single re-runnable script: dropping new files into
