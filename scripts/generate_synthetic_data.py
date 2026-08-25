@@ -35,41 +35,44 @@ START_DATE = datetime(2024, 6, 1)
 N_DAYS = 90
 DATES = [START_DATE + timedelta(days=i) for i in range(N_DAYS)]
 
+# base_daily_budget is calibrated so per-campaign ROAS lands in a believable
+# ~2x-7x range against this dataset's POS revenue scale (real campaigns rarely
+# sustain double-digit ROAS) - see README Step 4 findings for the actual numbers.
 CAMPAIGNS = [
     {
         "campaign_id": "SUMMER_PROMO_2024_TH",
         "short_code": "SP24",
         "platforms": ["LINE", "Facebook"],
         "active_days": (5, 35),      # (start_day_idx, end_day_idx)
-        "base_daily_budget": 15000,
+        "base_daily_budget": 75000,
     },
     {
         "campaign_id": "BACK_TO_SCHOOL_2024",
         "short_code": "BTS24",
         "platforms": ["LINE", "Google"],
         "active_days": (30, 60),
-        "base_daily_budget": 12000,
+        "base_daily_budget": 60000,
     },
     {
         "campaign_id": "FLASH_SALE_JULY_2024",
         "short_code": "FSJ24",
         "platforms": ["LINE"],
         "active_days": (20, 27),
-        "base_daily_budget": 25000,
+        "base_daily_budget": 125000,
     },
     {
         "campaign_id": "NEW_USER_ACQUISITION_Q3",
         "short_code": "NUA24",
         "platforms": ["Facebook", "Google"],
         "active_days": (0, 90),
-        "base_daily_budget": 8000,
+        "base_daily_budget": 40000,
     },
     {
         "campaign_id": "MEMBER_EXCLUSIVE_AUG_2024",
         "short_code": "MEA24",
         "platforms": ["LINE", "Facebook", "Google"],
         "active_days": (60, 85),
-        "base_daily_budget": 18000,
+        "base_daily_budget": 90000,
     },
 ]
 

@@ -169,8 +169,11 @@ per-campaign ROI table (ad spend vs. attributed sales, returns excluded).
 **Findings / Result:**
 - 286 POS rows reference a `customer_ref` that doesn't exist in CRM (orphan references — bad
   sync, flagged not dropped); all `campaign_code` values mapped cleanly to a `campaign_id`.
-- Per-campaign ROAS ranges from ~9x (`FLASH_SALE_JULY_2024`) to ~36x
-  (`NEW_USER_ACQUISITION_Q3`) — see `data/processed/campaign_summary.csv` for the full table.
+- Per-campaign ROAS ranges from ~1.9x (`FLASH_SALE_JULY_2024`) to ~7.3x
+  (`NEW_USER_ACQUISITION_Q3`), overall ROAS ~5.1x — a believable spread; ad budgets in
+  `scripts/generate_synthetic_data.py` are calibrated against this dataset's POS revenue scale so
+  no campaign shows an unrealistic double-digit ROAS. See `data/processed/campaign_summary.csv`
+  for the full table.
 - Only **61%** of ad-reported `conversions_reported` reconcile to a real POS-attributed order
   (7,020 reported vs. 4,307 real) — `scripts/generate_synthetic_data.py` grounds reported
   conversions in the true order count per campaign/day with a randomized 1.3x–2x over-count factor,
