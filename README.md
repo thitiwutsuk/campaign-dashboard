@@ -14,6 +14,12 @@ be profiled, cleaned, and reconciled before they can answer a business question 
 actually drove sales. The approach: audit data quality issue-by-issue, build a reusable cleaning
 and reconciliation pipeline, then surface the result as an automated Streamlit dashboard.
 
+## Preview
+
+| Overview | Campaign ROI |
+|---|---|
+| ![Overview tab](docs/img/overview.png) | ![Campaign ROI tab](docs/img/campaign-roi.png) |
+
 ## Project Structure
 
 ```
