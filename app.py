@@ -11,11 +11,13 @@ from pathlib import Path
 
 import pandas as pd
 import plotly.express as px
+import plotly.graph_objects as go
 import streamlit as st
 
 DATA_DIR = Path(__file__).resolve().parent / "data" / "processed"
 
 st.set_page_config(page_title="Campaign Dashboard", layout="wide")
+px.defaults.template = "plotly_white"
 
 
 @st.cache_data
@@ -58,7 +60,6 @@ mask = (
     & (unified_sales["transaction_datetime"].dt.date <= end_date)
 )
 sales = unified_sales[mask].copy()
-sales_in_campaigns = sales[sales["campaign_id"].isin(selected_campaigns) | sales["campaign_id"].isna()]
 sales_no_returns = sales[~sales["is_return"]]
 
 tab_overview, tab_trend, tab_roi, tab_segments, tab_quality = st.tabs(
@@ -133,6 +134,34 @@ with tab_trend:
 
 # --- Campaign ROI -----------------------------------------------------------
 with tab_roi:
+    st.subheader("Sales funnel")
+    ad_filtered = ad_clean[
+        (ad_clean["report_date"].dt.date >= start_date)
+        & (ad_clean["report_date"].dt.date <= end_date)
+        & (ad_clean["campaign_id"].isin(selected_campaigns))
+    ]
+    attributed_sales = sales_no_returns[sales_no_returns["campaign_id"].isin(selected_campaigns)]
+
+    funnel_stages = ["Impressions", "Clicks", "Conversions (ad-reported)", "Orders (POS-attributed)"]
+    funnel_values = [
+        int(ad_filtered["impressions"].sum()),
+        int(ad_filtered["clicks"].sum()),
+        int(ad_filtered["conversions_reported"].sum()),
+        int(attributed_sales["transaction_id"].nunique()),
+    ]
+    funnel_revenue = attributed_sales["net_amount_thb"].sum()
+
+    fig_funnel = go.Figure(
+        go.Funnel(y=funnel_stages, x=funnel_values, textinfo="value+percent initial")
+    )
+    fig_funnel.update_layout(template="plotly_white")
+    st.plotly_chart(fig_funnel, width="stretch")
+    st.caption(
+        f"Those {funnel_values[-1]:,} POS-attributed orders generated ฿{funnel_revenue:,.0f} in "
+        "revenue. Note the drop from ad-reported conversions to POS-attributed orders — the ad "
+        "platform's own pixel-tracked conversions are noisy and don't reconcile 1:1 with real sales."
+    )
+
     st.subheader("ROAS by campaign")
     fig3 = px.bar(
         campaign_summary.sort_values("roas"), x="roas", y="campaign_id", orientation="h",
