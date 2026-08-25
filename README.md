@@ -1,8 +1,8 @@
 # Campaign Dashboard — reconciling messy retail data into an automated Streamlit dashboard
 
-![Python](https://img.shields.io/badge/Python-3.9-3776AB?style=flat-square&logo=python&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-2.3-150458?style=flat-square&logo=pandas&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-1.38-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.14-3776AB?style=flat-square&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-3.0-150458?style=flat-square&logo=pandas&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.62-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/License-MIT-3DA639?style=flat-square&logo=opensourceinitiative&logoColor=white)
 ![Progress](https://img.shields.io/badge/Progress-In%20Progress-yellow?style=flat-square)
 
@@ -86,6 +86,7 @@ campaign-dashboard/
 
 ## Environment Setup
 
+Requires **Python 3.11+** (`pandas==3.0.5` has no wheels for older versions):
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
@@ -179,8 +180,18 @@ Overview/Trend/Segment tabs.
 **Result:** verified locally with `streamlit run app.py` — all 5 tabs render, 6 charts + 5 tables
 populate, zero exceptions and zero browser console errors.
 
-### Step 7: Deployment *(planned)*
+### Step 7: Deployment *(in progress)*
 Push to GitHub and deploy via Streamlit Community Cloud.
+
+**Gotcha hit during first deploy:** Streamlit Community Cloud does not honor a `runtime.txt`
+Python-version pin — it always provisions whatever its current default Python is (3.14 as of this
+deploy), regardless of that file. The original pins (`pandas==2.3.3`, `numpy==1.24.3`,
+`streamlit==1.38.0`) predate Python 3.14 wheel availability for several transitive dependencies
+(numpy, pillow), so the build failed trying to compile them from source. Fix: bump `requirements.txt`
+to versions with prebuilt wheels for the Python Cloud actually runs (`pandas==3.0.5`,
+`numpy==2.5.2`, `streamlit==1.62.0`, `plotly==6.9.0`), verified locally on Python 3.14 first —
+pipeline output and dashboard render identically to the older pins. The local dev `.venv` now also
+runs Python 3.14 to match Cloud and avoid this drifting again.
 
 ## Status
 

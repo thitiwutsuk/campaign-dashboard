@@ -101,7 +101,7 @@ with tab_overview:
         ].style.format(
             {"ad_spend_thb": "฿{:,.0f}", "attributed_revenue_thb": "฿{:,.0f}", "roas": "{:.1f}x", "roi_pct": "{:.0f}%"}
         ),
-        use_container_width=True,
+        width="stretch",
         hide_index=True,
     )
 
@@ -114,7 +114,7 @@ with tab_trend:
         .sum()
     )
     fig = px.line(daily, x="date", y="net_amount_thb", labels={"net_amount_thb": "Revenue (THB)", "date": "Date"})
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
 
     st.subheader("Daily revenue: attributed vs. non-attributed")
     daily_attr = (
@@ -129,7 +129,7 @@ with tab_trend:
         daily_attr, x="date", y="net_amount_thb", color="attributed",
         labels={"net_amount_thb": "Revenue (THB)", "date": "Date", "attributed": ""},
     )
-    st.plotly_chart(fig2, use_container_width=True)
+    st.plotly_chart(fig2, width="stretch")
 
 # --- Campaign ROI -----------------------------------------------------------
 with tab_roi:
@@ -138,7 +138,7 @@ with tab_roi:
         campaign_summary.sort_values("roas"), x="roas", y="campaign_id", orientation="h",
         labels={"roas": "ROAS (revenue / spend)", "campaign_id": ""},
     )
-    st.plotly_chart(fig3, use_container_width=True)
+    st.plotly_chart(fig3, width="stretch")
 
     st.subheader("Spend vs. attributed revenue")
     spend_vs_rev = campaign_summary.melt(
@@ -147,7 +147,7 @@ with tab_roi:
     )
     fig4 = px.bar(spend_vs_rev, x="campaign_id", y="thb", color="metric", barmode="group",
                   labels={"thb": "THB", "campaign_id": "", "metric": ""})
-    st.plotly_chart(fig4, use_container_width=True)
+    st.plotly_chart(fig4, width="stretch")
 
 # --- Customer Segments -------------------------------------------------------
 with tab_segments:
@@ -158,14 +158,14 @@ with tab_segments:
             "customer_segment", as_index=False
         )["net_amount_thb"].sum()
         fig5 = px.pie(by_segment, names="customer_segment", values="net_amount_thb")
-        st.plotly_chart(fig5, use_container_width=True)
+        st.plotly_chart(fig5, width="stretch")
     with col2:
         st.subheader("Revenue by region")
         by_region = sales_no_returns.dropna(subset=["region"]).groupby(
             "region", as_index=False
         )["net_amount_thb"].sum().sort_values("net_amount_thb", ascending=False)
         fig6 = px.bar(by_region, x="region", y="net_amount_thb", labels={"net_amount_thb": "Revenue (THB)"})
-        st.plotly_chart(fig6, use_container_width=True)
+        st.plotly_chart(fig6, width="stretch")
 
     st.caption(
         "Segment/region are only known for transactions linked to a CRM customer — walk-in sales "
@@ -190,4 +190,4 @@ with tab_quality:
             report_df = pd.DataFrame(
                 quality_report[key].items(), columns=["Check", "Count"]
             )
-            st.dataframe(report_df, use_container_width=True, hide_index=True)
+            st.dataframe(report_df, width="stretch", hide_index=True)
