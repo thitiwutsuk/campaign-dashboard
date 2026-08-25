@@ -1,0 +1,825 @@
+cust_id,full_name,email,phone,signup_date,customer_segment,region,total_lifetime_orders,source_system
+C-00442,Somsak Phanuwat,somsak.phanuwat442@example.com,0813936408,08/10/2023,N/A,bangkok,11.0,CRM_LEGACY
+C-00173,Thanapon Thongdee,thanapon.thongdee173@example.com,+66802996711,2022-10-31,new,ชลบุรี,18.0,CRM_V2
+C-00558,Somchai Kaewmanee,somchai.kaewmanee558@example.com,+66839491531,15/05/2022,New,HKT,24.0,CRM_V2
+C-00415,Pim Chaiyaporn,pim.chaiyaporn415@example.com,0850796716,02/08/2023,new,Bangkok,37.0,CRM_V2
+C-00609,Chai Kaewmanee,chai.kaewmanee609@example.com,0886588937,06/08/2022,N/A,Khon Kaen,17.0,CRM_V2
+C-00541,Pim Suksawat,pim.suksawat541@example.com,+66862020684,29/10/2022,3, CNX ,14.0,CRM_V2
+C-00627,Pim Rattanakul,pim.rattanakul627@example.com,089-177-0952,17/04/2024,,เชียงใหม่,32.0,CRM_V2
+C-00016,Wichai Rattanakul,wichai.rattanakul16@example.com,083-720-1389,2023-06-08,NEW,Chonburi,2.0,CRM_LEGACY
+C-00533,Wichai Thongdee,wichai.thongdee533@example.com,0881791467,19/08/2022,Vip,ขอนแก่น,,CRM_LEGACY_MIGRATED
+C-00403,Anan Suksawat,anan.suksawat403@example.com,+66890762969,08/29/2022,N/A,HKT,21.0,CRM_V2
+C-00144,Preecha Boonmee,preecha.boonmee144@example.com,+66869615208,2023-04-15,NEW,ภูเก็ต,4.0,CRM_V2
+C-00289,Pim Suksawat,pim.suksawat289@example.com,+66853203338,16/10/2023,,CNX,20.0,CRM_V2
+C-00345,Somchai Chaiyaporn,somchai.chaiyaporn345@example.com,083-740-5291,22/01/2022,regular,ขอนแก่น,-12.0,CRM_V2
+C-00474,Siriporn Phanuwat,siriporn.phanuwat474@example.com,085-638-9018,03/10/2022,3,Pattaya,36.0,CRM_V2
+C-00417,Suda Kaewmanee,suda.kaewmanee417@example.com,+66896681339,20/11/2022,Regular,กรุงเทพ,20.0,CRM_V2
+C-00323,Wichai Phanuwat,wichai.phanuwat323@example.com,0819363889,14/02/2023,1,Phuket,4.0,CRM_LEGACY
+C-00459,Preecha Chaiyaporn,preecha.chaiyaporn459@example.com,+66822734712,09/04/2023,REGULAR,Phuket,33.0,CRM_LEGACY
+C-00602,Somsak Rattanakul,somsak.rattanakul602@example.com,+66867817263,13/11/2022,regular,Phuket,21.0,CRM_V2
+C-00594,Thanapon Thongdee,thanapon.thongdee594@example.com,085-857-2151,06-Aug-2023,,HKT,,CRM_V2
+C-00388,Kittipong Wongsawat,kittipong.wongsawat388@example.com,+66818099216,09/21/2022,NEW, Phuket ,15.0,CRM_LEGACY_MIGRATED
+C-00741,Thanapon Rattanakul,thanapon.rattanakul741@example.com,0850918218,2022-06-04,Regular,ภูเก็ต,36.0,CRM_V2
+C-00138,Wichai Rattanakul,wichai.rattanakul138@example.com,0837805585,2022-03-19,New,Chiang Mai,27.0,CRM_V2
+C-00066,Somchai Rattanakul,somchai.rattanakul66@example.com,0849316372,19/05/2022,New, ชลบุรี ,21.0,CRM_V2
+C-00231,Waree Chaiyaporn,waree.chaiyaporn231@example.com,+66873675446,12/22/2023, Regular,ชลบุรี,22.0,CRM_V2
+C-00356,Somchai Chaiyaporn,somchai.chaiyaporn356@example.com,+66823963348,24/12/2021,new,bangkok,5.0,CRM_V2
+C-00458,Somsak Boonmee,somsak.boonmee458@example.com,0893561769,2022-11-01, Regular,Bangkok,32.0,CRM_LEGACY
+C-00439,Suda Rattanakul,suda.rattanakul439@example.com,0812826461,20/08/2022,3,Chiang Mai,28.0,CRM_V2
+C-00796,Preecha Phanuwat,preecha.phanuwat796@example.com,+66833608043,2023-10-20,,ขอนแก่น,28.0,CRM_V2
+C-00570,Malee Phanuwat,malee.phanuwat570@example.com,0827003768,12-Jul-2022,VIP,HKT,22.0,CRM_V2
+C-00021,Wichai Kaewmanee,wichai.kaewmanee21@example.com,0878274247,28/08/2023,vip,HKT,35.0,CRM_LEGACY
+C-00557,Anan Suksawat,anan.suksawat557@example.com,0831123587,06/01/2022,Regular,Chonburi,33.0,CRM_V2
+C-00069,Waree Suksawat,waree.suksawat69@example.com,082-101-7989,19/07/2022,,Khon Kaen,28.0,CRM_V2
+C-00574,Chai Kaewmanee,chai.kaewmanee574@example.com,082-788-3904,23/09/2023,REGULAR,BKK,19.0,CRM_V2
+C-00233,Suda Rattanakul,suda.rattanakul233@example.com,086-428-2769,05/28/2022,VIP,CNX,0.0,CRM_V2
+C-00142,Preecha Phanuwat,preecha.phanuwat142@example.com,0818762315,06/01/2022, Regular,Bangkok,28.0,CRM_V2
+C-00437,Malee Suksawat,malee.suksawat437@example.com,0864758029,2023-06-26,REGULAR,Chonburi,,CRM_LEGACY
+C-00581,Nattaya Phanuwat,NATTAYA.PHANUWAT581@EXAMPLE.COM,0852507538,22/04/2023,NEW,Khon Kaen,1.0,CRM_V2
+C-00328,Waree Boonmee,waree.boonmee328@example.com,089-436-0652,17/04/2023,Regular,Bangkok,24.0,CRM_V2
+C-00213,Wichai Sukjai,wichai.sukjai213@example.com,+66831756864,28/12/2023, Regular,ชลบุรี,1.0,CRM_V2
+C-00267,Somchai Chaiyaporn,somchai.chaiyaporn267@example.com,084-615-5810,15-Feb-2023,1,ชลบุรี,23.0,CRM_LEGACY
+C-00521,Wichai Boonmee,wichai.boonmee521@example.com,088-759-3322,17/12/2023,New,Pattaya,9.0,CRM_V2
+C-00482,Chai Charoensuk,,+66832960240,11/06/2022,New,CNX,-23.0,CRM_V2
+C-00531,Malee Suksawat,malee.suksawat531@example.com,086-682-9759,05/01/2022,,Phuket,14.0,CRM_V2
+C-00624,Wichai Wongsawat,wichai.wongsawat624@example.com,081-917-2332,14/03/2023,REGULAR,Chonburi,,CRM_V2
+C-00102,Kittipong Charoensuk,kittipong.charoensuk102@example.com,+66852383155,2023-11-30,new,HKT,25.0,CRM_V2
+C-00598,Somchai Suksawat,somchai.suksawat598@example.com,+66898814403,2022-08-29,regular,Bangkok,,CRM_LEGACY
+C-00276,Suda Chaiyaporn,suda.chaiyaporn276@example.com,+66840163367,2022-04-24,REGULAR,ชลบุรี,,CRM_LEGACY
+C-00752,Suda Chaiyaporn, suda.chaiyaporn752@example.com  ,+66810872870,14/01/2024,,ภูเก็ต,29.0,CRM_LEGACY
+C-00206,Waree Charoensuk,waree.charoensuk206@example.com,0897771865,2022-10-01,,Chiang Mai,15.0,CRM_V2
+C-00747,Ratana Chaiyaporn,ratana.chaiyaporn747@example.com,087-949-5583,2024-03-13,, ภูเก็ต ,38.0,CRM_V2
+C-00237,Waree Suksawat,waree.suksawat237@example.com,089-504-9533,10/08/2023,REGULAR,Bangkok,4.0,CRM_V2
+C-00147,Preecha Wongsawat,preecha.wongsawat147@example.com,081-810-3930,26/08/2023,regular,Khon Kaen,12.0,CRM_LEGACY
+C-00186,Siriporn Rattanakul,siriporn.rattanakul186@example.com,0811966675,2022-01-15,REGULAR,Khon Kaen,16.0,CRM_V2
+C-00428,Preecha Charoensuk,preecha.charoensuk428@example.com,0855446692,2024-04-26,REGULAR,bangkok,24.0,CRM_V2
+C-00110,Preecha Sukjai,preecha.sukjai110@example.com,+66884972853,2022-09-16,1,Khon Kaen,15.0,CRM_V2
+C-00143,Preecha Sukjai,preecha.sukjai143@example.com,+66877288423,2022-02-08, VIP ,bangkok,38.0,CRM_V2
+C-00723,Malee Rattanakul,malee.rattanakul723@example.com,+66846204931,2023-03-04,,ขอนแก่น,32.0,CRM_LEGACY
+C-00743,Nattaya Phanuwat,nattaya.phanuwat743@example.com,085-772-7751,21/07/2023,Regular,BKK,35.0,CRM_V2
+C-00424,Suda Charoensuk,suda.charoensuk424@example.com,080-800-3267,2023-08-30,Regular,Khon Kaen,23.0,CRM_V2
+C-00790,Ratana Kaewmanee,,0824389763,27/07/2022,Regular,Chiang Mai,3.0,CRM_V2
+C-00480,Wichai Rattanakul,wichai.rattanakul480@example.com,080-546-3515,01/04/2022,REGULAR,Chiang Mai,9.0,CRM_V2
+C-00008,Waree Suksawat, waree.suksawat8@example.com  ,0862980262,05/23/2022, Regular,Khon Kaen,1.0,CRM_V2
+C-00318,Wichai Suksawat,wichai.suksawat318@example.com,083-095-2171,08/07/2022,Regular, ภูเก็ต ,1.0,CRM_V2
+C-00175,Thanapon Phanuwat,thanapon.phanuwat175@example.com,+66883780842,13/08/2022,1,Pattaya,33.0,CRM_V2
+C-00577,Somsak Boonmee,somsak.boonmee577@example.com,087-822-2064,11-Feb-2023, Regular,Phuket,12.0,CRM_V2
+C-00670,Wichai Phanuwat,wichai.phanuwat670@example.com,0890473975,2023-07-04,regular,Khon Kaen,35.0,CRM_V2
+C-00068,Somchai Thongdee,somchai.thongdee68@example.com,080-143-4013,06/08/2022,vip, HKT ,4.0,CRM_V2
+C-00702,Preecha Suksawat,preecha.suksawat702@example.com,0897978009,2023-05-01,NEW,HKT,23.0,CRM_V2
+C-00448,Somsak Suksawat,somsak.suksawat448@example.com,087-829-0716,2022-07-04,, Khon Kaen ,2.0,CRM_V2
+C-00446,Somchai Boonmee, somchai.boonmee446@example.com  ,0889058953,2022-11-20,N/A,ภูเก็ต,18.0,CRM_LEGACY
+C-00165,Preecha Chaiyaporn,preecha.chaiyaporn165@example.com,082-964-5761,03/03/2023,New,Phuket,5.0,CRM_V2
+C-00258,Siriporn Chaiyaporn,siriporn.chaiyaporn258@example.com,085-927-2326,07/04/2024,Regular,HKT,21.0,CRM_V2
+C-00767,Wichai Charoensuk,wichai.charoensuk767@example.com,0866095154,30/06/2022,N/A,Chiang Mai,11.0,CRM_V2
+C-00548,Somsak Kaewmanee,somsak.kaewmanee548@example.com,0819916510,23/09/2022, Regular,CNX,1.0,CRM_LEGACY
+C-00736,Nattaya Rattanakul,dup_thanapon.boonmee736@example.com,+66840853104,2024-05-20,,bangkok,13.0,CRM_V2
+C-00194,Preecha Rattanakul,preecha.rattanakul194@example.com,083-409-9404,29/09/2022,,bangkok,-9.0,CRM_LEGACY
+C-00564,Malee Charoensuk,malee.charoensuk564@example.com,+66880133197,11/13/2023,New, Khon Kaen ,31.0,CRM_LEGACY
+C-00646,Suda Charoensuk,SUDA.CHAROENSUK646@EXAMPLE.COM,086-566-0882,29/06/2023,REGULAR,CNX,38.0,CRM_LEGACY
+C-00463,Somsak Sukjai,somsak.sukjai463@example.com,087-240-5559,07/07/2023,New,HKT,24.0,CRM_LEGACY
+C-00009,Waree Sukjai,dup_wichai.phanuwat9@example.com,0860781151,2023-08-21,VIP,Chiang Mai,27.0,CRM_V2
+C-00399,Somchai Sukjai,somchai.sukjai399@example.com,0895741959,03/05/2022,regular, Phuket ,27.0,CRM_V2
+C-00737,Ratana Chaiyaporn,ratana.chaiyaporn737@example.com,087-275-1628,20/05/2024,NEW,ภูเก็ต,16.0,CRM_V2
+C-00793,Suda Rattanakul,suda.rattanakul793@example.com,0855214406,18/01/2024,new,Phuket,39.0,CRM_V2
+C-00784,Somsak Suksawat,somsak.suksawat784@example.com,0881133691,22/09/2022,Regular,Bangkok,33.0,CRM_V2
+C-00679,Suda Sukjai,suda.sukjai679@example.com,089-453-8764,27-Dec-2021,Regular,CNX,37.0,CRM_V2
+C-00273,Waree Chaiyaporn,waree.chaiyaporn273@example.com,081-177-5031,2023-02-20,new,เชียงใหม่,32.0,CRM_LEGACY_MIGRATED
+C-00689,Somsak Suksawat,somsak.suksawat689@example.com,0832703302,03-Jul-2023,regular,Phuket,30.0,CRM_V2
+C-00515,Chai Boonmee,chai.boonmee515@example.com,087-072-7233,2023-07-04,NEW,ขอนแก่น,3.0,CRM_LEGACY
+C-00787,Nattaya Sukjai,nattaya.sukjai787@example.com,0871518304,23/04/2023,NEW, ขอนแก่น ,,CRM_V2
+C-00772,Thanapon Sukjai,,+66851001548,03/05/2022,New,Pattaya,28.0,CRM_LEGACY_MIGRATED
+C-00707,Nattaya Phanuwat,nattaya.phanuwat707@example.com,080-091-2433,02/05/2023,Regular,Bangkok,36.0,CRM_V2
+C-00616,Preecha Rattanakul,PREECHA.RATTANAKUL616@EXAMPLE.COM,+66851447077,31/12/2022,new,ภูเก็ต,39.0,CRM_V2
+C-00373,Thanapon Rattanakul,thanapon.rattanakul373@example.com,0839225643,05/27/2023,regular,Pattaya,38.0,CRM_V2
+C-00249,Chai Charoensuk,chai.charoensuk249@example.com,+66853114654,21/04/2024, Regular,ขอนแก่น,34.0,CRM_LEGACY
+C-00129,Somchai Wongsawat,somchai.wongsawat129@example.com,0889092873,04/12/2023,new,bangkok,14.0,CRM_V2
+C-00472,Wichai Kaewmanee,wichai.kaewmanee472@example.com,+66876172007,03/04/2023,regular, กรุงเทพ ,40.0,CRM_V2
+C-00063,Somsak Chaiyaporn,somsak.chaiyaporn63@example.com,+66804741950,22/10/2022,2,BKK,38.0,CRM_V2
+C-00019,Kittipong Rattanakul,kittipong.rattanakul19@example.com,0862660923,03/01/2024,Regular,ขอนแก่น,13.0,CRM_LEGACY_MIGRATED
+C-00430,Somsak Kaewmanee,somsak.kaewmanee430@example.com,+66885954218,07/06/2022,regular,Chiang Mai,1.0,CRM_V2
+C-00336,Thanapon Sukjai,thanapon.sukjai336@example.com,089-351-0435,2022-12-25, Regular,Chiang Mai,15.0,CRM_LEGACY
+C-00613,Somsak Suksawat,somsak.suksawat613@example.com,084-825-3264,31/07/2023,Regular,ขอนแก่น,25.0,CRM_V2
+C-00319,Siriporn Sukjai,SIRIPORN.SUKJAI319@EXAMPLE.COM,+66825255923,12/04/2023,,ชลบุรี,20.0,CRM_LEGACY
+C-00590,Somchai Wongsawat,somchai.wongsawat590@example.com,+66895823471,2022-08-12,New,HKT,21.0,CRM_LEGACY
+C-00290,Preecha Boonmee,preecha.boonmee290@example.com,+66819150579,12/01/2023,REGULAR,Chiang Mai,,CRM_V2
+C-00792,Chai Wongsawat,chai.wongsawat792@example.com,+66808801960,10/01/2023, VIP ,Bangkok,13.0,CRM_V2
+C-00366,Siriporn Sukjai,siriporn.sukjai366@example.com,089-735-2618,23/02/2024,Regular,เชียงใหม่,10.0,CRM_V2
+C-00075,Somchai Chaiyaporn,somchai.chaiyaporn75@example.com,088-620-1123,24/05/2023,,ขอนแก่น,,CRM_V2
+C-00733,Somsak Suksawat,somsak.suksawat733@example.com,0805839892,28/05/2022, Regular,Bangkok,25.0,CRM_V2
+C-00306,Wichai Chaiyaporn,wichai.chaiyaporn306@example.com,080-821-6567,2022-03-06,VIP,ชลบุรี,35.0,CRM_V2
+C-00401,Pim Suksawat,pim.suksawat401@example.com,080-390-3231,20/05/2022,N/A,CNX,5.0,CRM_V2
+C-00491,Pim Thongdee,pim.thongdee491@example.com,087-010-5324,2022-02-01,new,ชลบุรี,13.0,CRM_V2
+C-00427,Preecha Rattanakul,preecha.rattanakul427@example.com,0811042453,16/11/2022, Regular,Khon Kaen,19.0,CRM_V2
+C-00023,Waree Rattanakul,waree.rattanakul23@example.com,085-956-0481,10/05/2023, Regular,ชลบุรี,25.0,CRM_LEGACY_MIGRATED
+C-00183,Thanapon Sukjai,thanapon.sukjai183@example.com,085-570-0289,06/12/2023,regular,Chonburi,5.0,CRM_V2
+C-00229,Malee Rattanakul,malee.rattanakul229@example.com,+66810415586,03/06/2023,NEW,Chiang Mai,34.0,CRM_V2
+C-00100,Anan Phanuwat,anan.phanuwat100@example.com,082-309-9951,11/12/2023,Regular,ขอนแก่น,35.0,CRM_V2
+C-00657,Preecha Chaiyaporn,preecha.chaiyaporn657@example.com,085-674-1247,2022-05-24,REGULAR,ขอนแก่น,9.0,CRM_V2
+C-00471,Wichai Charoensuk,wichai.charoensuk471@example.com,0882893279,18/01/2022,Vip, Pattaya ,13.0,CRM_V2
+C-00776,Thanapon Suksawat,,086-467-9765,06/09/2023,New, HKT ,31.0,CRM_V2
+C-00108,Kittipong Chaiyaporn,kittipong.chaiyaporn108@example.com,+66859911218,08-Apr-2024,regular,เชียงใหม่,26.0,CRM_V2
+C-00489,Somsak Charoensuk,somsak.charoensuk489@example.com,0874276440,04/12/2022,Vip,Chonburi,1.0,CRM_V2
+C-00198,Chai Wongsawat,chai.wongsawat198@example.com,0888216312,23-Apr-2023,, Chonburi ,35.0,CRM_V2
+C-00687,Ratana Rattanakul,ratana.rattanakul687@example.com,+66835394931,09/12/2023,New,CNX,6.0,CRM_V2
+C-00503,Thanapon Sukjai,thanapon.sukjai503@example.com,+66825403786,26-Dec-2022,REGULAR,Phuket,5.0,CRM_LEGACY_MIGRATED
+C-00493,Pim Thongdee,pim.thongdee493@example.com,083-809-4168,27/02/2022,Vip,KHON KAEN,5.0,CRM_V2
+C-00038,Malee Charoensuk,malee.charoensuk38@example.com,084-936-6888,2023-07-13,Regular,bangkok,0.0,CRM_V2
+C-00090,Chai Wongsawat,chai.wongsawat90@example.com,089-673-4137,29-Sep-2023,new,Chonburi,11.0,CRM_V2
+C-00081,Pim Rattanakul,PIM.RATTANAKUL81@EXAMPLE.COM,+66892213461,23/12/2023,new,ภูเก็ต,8.0,CRM_V2
+C-00691,Malee Suksawat,malee.suksawat691@example.com,085-574-8959,02/04/2023,NEW,bangkok,-8.0,CRM_V2
+C-00473,Suda Boonmee,suda.boonmee473@example.com,080-953-4242,2022-06-13,Vip,Khon Kaen,20.0,CRM_V2
+C-00184,Waree Phanuwat,waree.phanuwat184@example.com,0852572434,18/04/2022,Regular,Phuket,6.0,CRM_V2
+C-00031,Malee Chaiyaporn,malee.chaiyaporn31@example.com,086-402-2802,18-Mar-2022,New,CNX,10.0,CRM_V2
+C-00011,Pim Sukjai,pim.sukjai11@example.com,+66850580084,2023-09-23,,HKT,,CRM_V2
+C-00379,Waree Boonmee,waree.boonmee379@example.com,0840415849,25-Dec-2023,REGULAR,Khon Kaen,21.0,CRM_V2
+C-00672,Suda Suksawat,suda.suksawat672@example.com,086-611-5597,20/01/2022,regular,ขอนแก่น,,CRM_V2
+C-00339,Pim Suksawat,pim.suksawat339@example.com,+66894480183,2024-05-23,regular,HKT,29.0,CRM_LEGACY
+C-00078,Malee Kaewmanee,malee.kaewmanee78@example.com,087-738-2571,16/07/2023, Regular,Pattaya,36.0,CRM_V2
+C-00316,Anan Thongdee,anan.thongdee316@example.com,0863930642,28/12/2021,,HKT,28.0,CRM_V2
+C-00002,Wichai Thongdee,wichai.thongdee2@example.com,082-041-9026,19/10/2022,,ขอนแก่น,21.0,CRM_V2
+C-00748,Somsak Boonmee,somsak.boonmee748@example.com,+66847612670,08-Mar-2022, Regular,Chonburi,23.0,CRM_LEGACY_MIGRATED
+C-00718,Suda Suksawat,suda.suksawat718@example.com,084-119-9756,2022-07-25,NEW,กรุงเทพ,39.0,CRM_LEGACY
+C-00544,Waree Thongdee,waree.thongdee544@example.com,0847136363,27-Oct-2022,REGULAR,BKK,36.0,CRM_V2
+C-00512,Siriporn Kaewmanee,siriporn.kaewmanee512@example.com,+66863426253,2022-11-05,vip,CNX,29.0,CRM_V2
+C-00445,Wichai Phanuwat,wichai.phanuwat445@example.com,0836510430,23-Jan-2024,vip,HKT,33.0,CRM_V2
+C-00341,Suda Thongdee,suda.thongdee341@example.com,083-225-4303,28/04/2023,N/A,กรุงเทพ,,CRM_V2
+C-00665,Preecha Chaiyaporn,preecha.chaiyaporn665@example.com,+66833687360,28/10/2023,1,กรุงเทพ,2.0,CRM_V2
+C-00603,Suda Wongsawat,suda.wongsawat603@example.com,+66842551629,26/04/2023,2,Chiang Mai,21.0,CRM_V2
+C-00617,Nattaya Kaewmanee,NATTAYA.KAEWMANEE617@EXAMPLE.COM,0801417845,06/01/2024,1,Chonburi,5.0,CRM_V2
+C-00159,Suda Phanuwat,suda.phanuwat159@example.com,+66809845915,18/02/2022,REGULAR,Bangkok,37.0,CRM_V2
+C-00431,Anan Thongdee,dup_wichai.thongdee431@example.com,+66824833568,23/01/2023,New,Bangkok,28.0,CRM_V2
+C-00452,Siriporn Kaewmanee, siriporn.kaewmanee452@example.com  ,082-648-3021,04/12/2022,REGULAR,KHON KAEN,17.0,CRM_LEGACY
+C-00252,Kittipong Rattanakul,kittipong.rattanakul252@example.com,0817418753,2022-04-28,new,ขอนแก่น,,CRM_LEGACY
+C-00756,Siriporn Wongsawat,siriporn.wongsawat756@example.com,086-841-0344,11/06/2022,REGULAR,Pattaya,11.0,CRM_LEGACY_MIGRATED
+C-00120,Kittipong Thongdee,kittipong.thongdee120@example.com,080-750-4345,23/12/2023,N/A,Chonburi,7.0,CRM_LEGACY
+C-00642,Chai Wongsawat,chai.wongsawat642@example.com,+66856123208,06/03/2022,VIP,เชียงใหม่,1.0,CRM_V2
+C-00014,Thanapon Wongsawat,thanapon.wongsawat14 at example.com,+66876275400,2024-01-01,regular,ภูเก็ต,3.0,CRM_V2
+C-00749,Anan Phanuwat,anan.phanuwat749@example.com,088-927-2183,2023-05-17,regular,Chonburi,30.0,CRM_V2
+C-00200,Pim Sukjai,pim.sukjai200@example.com,0811372895,06/12/2022,REGULAR,ขอนแก่น,2.0,CRM_V2
+C-00456,Thanapon Sukjai,thanapon.sukjai456@example.com,+66807226837,05/10/2023,,Chiang Mai,32.0,CRM_V2
+C-00214,Preecha Thongdee,preecha.thongdee214@example.com,+66819919935,01/02/2024,Regular,CNX,12.0,CRM_LEGACY
+C-00296,Chai Charoensuk,chai.charoensuk296@example.com,+66826306499,21/01/2024,,Phuket,5.0,CRM_V2
+C-00311,Pim Chaiyaporn,pim.chaiyaporn311@example.com,082-779-1036,27/01/2024,REGULAR,HKT,40.0,CRM_LEGACY
+C-00383,Thanapon Thongdee,,+66804362345,10/04/2024,REGULAR, Chiang Mai ,12.0,CRM_V2
+C-00130,Somsak Boonmee,somsak.boonmee130@example.com,+66851006043,08-Nov-2023,REGULAR,BKK,36.0,CRM_LEGACY
+C-00193,Anan Suksawat,anan.suksawat193@example.com,085-195-5478,2022-12-13,new,CHIANG MAI,20.0,CRM_LEGACY
+C-00170,Pim Boonmee,pim.boonmee170@example.com,0845200743,2022-07-15,N/A,Chonburi,36.0,CRM_LEGACY_MIGRATED
+C-00506,Nattaya Phanuwat,nattaya.phanuwat506@example.com,087-736-1242,2022-08-14,New,HKT,7.0,CRM_LEGACY
+C-00774,Ratana Phanuwat,ratana.phanuwat774@example.com,+66832726449,2023-07-24,1,Khon Kaen,9.0,CRM_V2
+C-00164,Somchai Phanuwat,somchai.phanuwat164@example.com,+66809576837,01/06/2023,regular,Pattaya,,CRM_V2
+C-00514,Nattaya Thongdee,nattaya.thongdee514@example.com,085-472-2983,2023-06-26,REGULAR,เชียงใหม่,39.0,CRM_V2
+C-00232,Wichai Phanuwat,wichai.phanuwat232@example.com,+66853043456,04-Apr-2022,Regular,ภูเก็ต,4.0,CRM_LEGACY
+C-00762,Suda Sukjai,suda.sukjai762@example.com,0899503427,2023-01-28,regular,bangkok,,CRM_V2
+C-00543,Siriporn Kaewmanee,siriporn.kaewmanee543@example.com,0894506449,2024-05-10, VIP ,ภูเก็ต,14.0,CRM_V2
+C-00280,Malee Sukjai,malee.sukjai280@example.com,0857363448,23-Jan-2022,REGULAR,ชลบุรี,6.0,CRM_V2
+C-00782,Nattaya Suksawat,nattaya.suksawat782@example.com,0884972866,2024-02-07,Regular,Khon Kaen,20.0,CRM_LEGACY_MIGRATED
+C-00684,Thanapon Kaewmanee,thanapon.kaewmanee684@example.com,086-062-7906,2023-01-12, Regular,BKK,34.0,CRM_V2
+C-00601,Somsak Wongsawat,somsak.wongsawat601@example.com,085-404-3562,29-Aug-2023,REGULAR,ขอนแก่น,37.0,CRM_V2
+C-00073,Wichai Boonmee,wichai.boonmee73@example.com,+66844614431,2023-07-11,New,Khon Kaen,18.0,CRM_V2
+C-00454,Anan Phanuwat,anan.phanuwat454@example.com,+66836367861,26/07/2022, Regular, Khon Kaen ,17.0,CRM_V2
+C-00334,Somsak Phanuwat,somsak.phanuwat334@example.com,0892061573,27-Aug-2022,NEW,Bangkok,12.0,CRM_V2
+C-00653,Wichai Suksawat,wichai.suksawat653@example.com,+66831967208,2022-07-18,Regular,Chonburi,,CRM_V2
+C-00205,Nattaya Kaewmanee,nattaya.kaewmanee205@example.com,+66832808625,10/26/2022,1, ขอนแก่น ,18.0,CRM_LEGACY_MIGRATED
+C-00643,Somchai Sukjai,dup_pim.wongsawat643@example.com,0869093655,26/01/2023,N/A,Chonburi,35.0,CRM_LEGACY_MIGRATED
+C-00371,Kittipong Sukjai,kittipong.sukjai371@example.com,080-992-5143,2022-09-20,VIP,Bangkok,34.0,CRM_V2
+C-00534,Pim Kaewmanee,pim.kaewmanee534@example.com,+66832938145,24-Jun-2022,Regular,Chonburi,,CRM_LEGACY_MIGRATED
+C-00695,Thanapon Phanuwat,thanapon.phanuwat695@example.com,0890287811,24/01/2024,3,CNX,32.0,CRM_LEGACY_MIGRATED
+C-00579,Nattaya Boonmee,nattaya.boonmee579@example.com,080-015-9279,10/03/2024,Regular,BKK,2.0,CRM_LEGACY
+C-00292,Siriporn Phanuwat,siriporn.phanuwat292@example.com,082-999-9570,2023-01-02,REGULAR,CNX,38.0,CRM_V2
+C-00109,Ratana Phanuwat, ratana.phanuwat109@example.com  ,080-722-5147,2022-11-17,REGULAR,HKT,31.0,CRM_V2
+C-00346,Kittipong Chaiyaporn,kittipong.chaiyaporn346@example.com,0806268867,2023-04-29,Regular,HKT,0.0,CRM_V2
+C-00545,Ratana Sukjai,ratana.sukjai545@example.com,+66811979809,31/01/2024,N/A,Phuket,7.0,CRM_V2
+C-00182,Kittipong Rattanakul,kittipong.rattanakul182@example.com,0898642682,2022-03-22,regular,Chonburi,25.0,CRM_LEGACY
+C-00199,Somchai Boonmee,somchai.boonmee199@example.com,+66870315143,2022-03-17,NEW,Khon Kaen,10.0,CRM_V2
+C-00778,Somsak Boonmee,somsak.boonmee778@example.com,089-931-9459,26/04/2023,new,ชลบุรี,37.0,CRM_LEGACY_MIGRATED
+C-00161,Preecha Suksawat,preecha.suksawat161@example.com,0885840130,10/11/2023,NEW,Pattaya,30.0,CRM_LEGACY
+C-00329,Waree Phanuwat,waree.phanuwat329@example.com,+66851075891,13/09/2023,regular,ขอนแก่น,21.0,CRM_V2
+C-00227,Preecha Sukjai,,089-592-0381,2024-04-17,Vip,Khon Kaen,33.0,CRM_LEGACY
+C-00630,Anan Suksawat,anan.suksawat630@example.com,082-664-9210,07/21/2023,Regular,Chiang Mai,15.0,CRM_V2
+C-00091,Somsak Sukjai, somsak.sukjai91@example.com  ,0843580360,22-Nov-2023,regular,ภูเก็ต,8.0,CRM_V2
+C-00285,Kittipong Kaewmanee,kittipong.kaewmanee285@example.com,082-411-9425,03/12/2022, Regular,กรุงเทพ,20.0,CRM_V2
+C-00673,Malee Wongsawat,malee.wongsawat673 at example.com,086-569-3919,03/01/2023,N/A, ภูเก็ต ,1.0,CRM_LEGACY
+C-00287,Ratana Kaewmanee,ratana.kaewmanee287@example.com,0881438672,10-Feb-2022,new,Khon Kaen,16.0,CRM_LEGACY
+C-00644,Kittipong Phanuwat,kittipong.phanuwat644@example.com,080-412-0342,14/01/2023,VIP,Pattaya,40.0,CRM_V2
+C-00210,Malee Thongdee,malee.thongdee210@example.com,082-618-2383,09/05/2024,REGULAR,Khon Kaen,23.0,CRM_V2
+C-00043,Siriporn Charoensuk,siriporn.charoensuk43@example.com,+66883705466,08-May-2023,vip,bangkok,14.0,CRM_LEGACY_MIGRATED
+C-00560,Malee Rattanakul,malee.rattanakul560@example.com,0854998413,27/07/2022, Regular,ภูเก็ต,26.0,CRM_V2
+C-00444,Siriporn Kaewmanee,siriporn.kaewmanee444@example.com,0874570090,23/02/2022,,Khon Kaen,12.0,CRM_V2
+C-00520,Anan Charoensuk,anan.charoensuk520@example.com,+66842630318,12-Jul-2022,regular,กรุงเทพ,33.0,CRM_LEGACY_MIGRATED
+C-00158,Wichai Rattanakul,wichai.rattanakul158@example.com,0848742118,19-Feb-2023,2,BKK,18.0,CRM_V2
+C-00725,Somsak Wongsawat,somsak.wongsawat725@example.com,+66842646862,02/04/2023,,Pattaya,1.0,CRM_LEGACY_MIGRATED
+C-00251,Thanapon Wongsawat,thanapon.wongsawat251@example.com,089-546-2011,09/01/2023, VIP ,ชลบุรี,7.0,CRM_V2
+C-00635,Preecha Charoensuk,preecha.charoensuk635@example.com,080-155-1197,27/01/2024,New,bangkok,,CRM_V2
+C-00377,Chai Sukjai,chai.sukjai377@example.com,+66898856696,15/10/2023,REGULAR,Phuket,27.0,CRM_V2
+C-00357,Ratana Thongdee,ratana.thongdee357@example.com,0807442411,2023-11-12,vip,Pattaya,,CRM_V2
+C-00228,Somsak Sukjai,somsak.sukjai228@example.com,0834112065,24/11/2022,REGULAR,BKK,40.0,CRM_V2
+C-00112,Siriporn Charoensuk,siriporn.charoensuk112@example.com,0880529393,25-Dec-2021,new,CNX,40.0,CRM_V2
+C-00568,Ratana Boonmee,ratana.boonmee568@example.com,+66801991704,07/10/2023,regular,กรุงเทพ,29.0,CRM_V2
+C-00509,Anan Suksawat,anan.suksawat509@example.com,+66877634998,2023-10-12,VIP,Khon Kaen,4.0,CRM_V2
+C-00720,Ratana Thongdee,ratana.thongdee720@example.com,+66886575491,23/04/2022, Regular,เชียงใหม่,25.0,CRM_V2
+C-00647,Somchai Phanuwat,somchai.phanuwat647@example.com,0802117712,2023-08-04,regular,ชลบุรี,,CRM_V2
+C-00259,Waree Suksawat,waree.suksawat259@example.com,+66819011112,09/05/2024,regular,ภูเก็ต,4.0,CRM_V2
+C-00322,Pim Boonmee,pim.boonmee322@example.com,089-345-0660,05/28/2024, Regular,ภูเก็ต,40.0,CRM_V2
+C-00281,Malee Phanuwat,malee.phanuwat281@example.com,0842763845,04/04/2023,regular,CNX,37.0,CRM_V2
+C-00013,Somsak Chaiyaporn,somsak.chaiyaporn13@example.com,+66808269111,25/12/2023,New,เชียงใหม่,34.0,CRM_LEGACY_MIGRATED
+C-00310,Somchai Wongsawat,somchai.wongsawat310@example.com,084-386-7805,2022-05-21,REGULAR,HKT,28.0,CRM_V2
+C-00350,Chai Chaiyaporn,dup_pim.sukjai350@example.com,081-209-5973,2023-07-12, Regular,Phuket,15.0,CRM_V2
+C-00085,Siriporn Chaiyaporn,siriporn.chaiyaporn85@example.com,0879788765,11/12/2022,VIP,ชลบุรี,8.0,CRM_LEGACY_MIGRATED
+C-00056,Waree Wongsawat,waree.wongsawat56@example.com,0869053597,02/27/2023, Regular,Pattaya,19.0,CRM_V2
+C-00754,Nattaya Thongdee,nattaya.thongdee754@example.com,0851488097,26/04/2024,,ภูเก็ต,7.0,CRM_LEGACY_MIGRATED
+C-00765,Preecha Wongsawat,preecha.wongsawat765@example.com,+66808399385,26/02/2023,regular,Chiang Mai,5.0,CRM_LEGACY
+C-00595,Malee Charoensuk,malee.charoensuk595@example.com,0889701368,02/06/2022,New,Khon Kaen,4.0,CRM_V2
+C-00717,Malee Kaewmanee,malee.kaewmanee717@example.com,+66820498148,2022-07-21,REGULAR,Bangkok,10.0,CRM_LEGACY_MIGRATED
+C-00408,Wichai Phanuwat,wichai.phanuwat408@example.com,084-281-0849,16/12/2023,regular,ชลบุรี,4.0,CRM_LEGACY
+C-00659,Suda Kaewmanee,suda.kaewmanee659@example.com,+66802126582,2024-01-16, VIP ,ขอนแก่น,18.0,CRM_V2
+C-00041,Ratana Kaewmanee,ratana.kaewmanee41@example.com,082-567-0649,30-Mar-2022,regular,กรุงเทพ,18.0,CRM_LEGACY_MIGRATED
+C-00117,Wichai Sukjai,wichai.sukjai117@example.com,0841455999,02-May-2023,regular,Chonburi,25.0,CRM_LEGACY
+C-00410,Chai Wongsawat,CHAI.WONGSAWAT410@EXAMPLE.COM,+66871676221,10/20/2022,REGULAR,HKT,8.0,CRM_V2
+C-00513,Waree Sukjai,waree.sukjai513@example.com,+66836811233,04/02/2023,regular,Pattaya,4.0,CRM_V2
+C-00335,Somsak Kaewmanee,somsak.kaewmanee335@example.com,086-544-3367,02/02/2023,NEW,CNX,,CRM_V2
+C-00559,Nattaya Sukjai,nattaya.sukjai559@example.com,+66824844943,20/04/2023,regular,ขอนแก่น,34.0,CRM_V2
+C-00469,Thanapon Phanuwat,thanapon.phanuwat469@example.com,088-866-0228,2024-03-31, Regular,กรุงเทพ,7.0,CRM_V2
+C-00587,Wichai Wongsawat,wichai.wongsawat587@example.com,088-577-7720,20-Feb-2023,REGULAR,BKK,28.0,CRM_V2
+C-00179,Preecha Phanuwat,preecha.phanuwat179@example.com,0842790552,2022-06-06,,เชียงใหม่,37.0,CRM_LEGACY
+C-00177,Malee Boonmee,malee.boonmee177@example.com,086-781-6273,2022-09-30,Regular,BKK,38.0,CRM_V2
+C-00753,Suda Phanuwat, suda.phanuwat753@example.com  ,085-753-2815,2023-04-05,new, ภูเก็ต ,30.0,CRM_LEGACY_MIGRATED
+C-00059,Somsak Suksawat,somsak.suksawat59@example.com,0821081788,25/07/2022, Regular, bangkok ,19.0,CRM_LEGACY_MIGRATED
+C-00153,Chai Chaiyaporn,chai.chaiyaporn153@example.com,087-331-4486,05/03/2022,regular,BANGKOK,10.0,CRM_LEGACY_MIGRATED
+C-00312,Malee Sukjai,malee.sukjai312@example.com,0853277675,15/02/2024,new,ขอนแก่น,37.0,CRM_V2
+C-00625,Somsak Rattanakul,somsak.rattanakul625@example.com,082-146-3731,04/30/2022,regular,Khon Kaen,,CRM_V2
+C-00017,Nattaya Sukjai,nattaya.sukjai17@example.com,+66874918104,2022-02-27,NEW,BKK,,CRM_V2
+C-00268,Somchai Wongsawat,somchai.wongsawat268@example.com,087-107-5886,2023-08-29, VIP ,ชลบุรี,3.0,CRM_LEGACY_MIGRATED
+C-00578,Preecha Thongdee,preecha.thongdee578@example.com,085-300-3418,16/11/2022,regular,ภูเก็ต,17.0,CRM_V2
+C-00466,Siriporn Chaiyaporn,siriporn.chaiyaporn466@example.com,085-773-9497,20-Nov-2023,New,Chonburi,4.0,CRM_V2
+C-00599,Ratana Suksawat,ratana.suksawat599@example.com,+66832204870,05/20/2022,regular,Chiang Mai,4.0,CRM_LEGACY
+C-00567,Pim Kaewmanee,pim.kaewmanee567@example.com,0801721052,30/12/2021,new,ชลบุรี,5.0,CRM_LEGACY
+C-00441,Somchai Charoensuk,somchai.charoensuk441@example.com,+66837306373,04-Jan-2022,new,เชียงใหม่,0.0,CRM_LEGACY
+C-00313,Waree Chaiyaporn,waree.chaiyaporn313@example.com,084-355-5324,2023-03-09,new,CNX,,CRM_LEGACY
+C-00418,Pim Boonmee,pim.boonmee418@example.com,082-792-4935,2023-02-09, Regular,Bangkok,13.0,CRM_V2
+C-00530,Suda Rattanakul,suda.rattanakul530@example.com,0808539918,30/03/2022,regular,Khon Kaen,8.0,CRM_V2
+C-00526,Wichai Boonmee,wichai.boonmee526@example.com,089-851-6634,22/01/2024,NEW, Phuket ,14.0,CRM_V2
+C-00572,Waree Kaewmanee,waree.kaewmanee572@example.com,0881348919,25/02/2024,regular,Khon Kaen,26.0,CRM_LEGACY
+C-00505,Siriporn Chaiyaporn,siriporn.chaiyaporn505@example.com,+66827176504,01/04/2024,New,Bangkok,33.0,CRM_V2
+C-00785,Wichai Rattanakul,wichai.rattanakul785@example.com,0817176178,15/06/2023,regular,Khon Kaen,2.0,CRM_V2
+C-00274,Pim Suksawat,pim.suksawat274@example.com,+66806635613,10/06/2022,New,ขอนแก่น,4.0,CRM_LEGACY_MIGRATED
+C-00552,Somsak Rattanakul,somsak.rattanakul552@example.com,086-092-6902,12/03/2023, Regular,bangkok,,CRM_V2
+C-00400,Ratana Suksawat,RATANA.SUKSAWAT400@EXAMPLE.COM,0834213732,25/11/2022, VIP ,Phuket,20.0,CRM_V2
+C-00464,Ratana Rattanakul,ratana.rattanakul464@example.com,0821926122,2023-11-03,Regular,ขอนแก่น,6.0,CRM_V2
+C-00204,Malee Charoensuk,malee.charoensuk204@example.com,+66859959846,2023-07-06,REGULAR,ขอนแก่น,11.0,CRM_V2
+C-00033,Chai Charoensuk,chai.charoensuk33@example.com,085-715-4294,2024-02-29,Regular,ภูเก็ต,36.0,CRM_LEGACY
+C-00426,Siriporn Chaiyaporn,siriporn.chaiyaporn426@example.com,0887539768,20/01/2024,NEW, bangkok ,13.0,CRM_V2
+C-00343,Nattaya Boonmee,nattaya.boonmee343@example.com,087-268-1287,05/05/2023,3, ขอนแก่น ,5.0,CRM_V2
+C-00157,Chai Sukjai,chai.sukjai157@example.com,+66864388837,2023-02-03,Regular,HKT,38.0,CRM_LEGACY
+C-00502,Nattaya Charoensuk,nattaya.charoensuk502@example.com,0849125341,2023-05-06,regular,BKK,14.0,CRM_V2
+C-00759,Ratana Sukjai,ratana.sukjai759@example.com,+66871896626,20/06/2023,new,กรุงเทพ,,CRM_V2
+C-00688,Nattaya Suksawat,nattaya.suksawat688 at example.com,+66865995034,12-Aug-2023,Regular,HKT,32.0,CRM_V2
+C-00537,Siriporn Sukjai,siriporn.sukjai537@example.com,087-492-1632,03/03/2022,new,Pattaya,36.0,CRM_V2
+C-00611,Pim Sukjai,pim.sukjai611@example.com,085-315-1731,24-Dec-2022,new,CNX,6.0,CRM_V2
+C-00004,Ratana Sukjai,ratana.sukjai4@example.com,+66863942252,21-Mar-2023,regular,Chiang Mai,4.0,CRM_LEGACY
+C-00485,Kittipong Boonmee,kittipong.boonmee485@example.com,+66880909103,12-May-2024,REGULAR,CNX,0.0,CRM_V2
+C-00131,Somchai Sukjai,somchai.sukjai131@example.com,089-313-1197,07/08/2022,REGULAR,CNX,7.0,CRM_LEGACY_MIGRATED
+C-00596,Anan Thongdee,anan.thongdee596 at example.com,0856614254,04/03/2024, Regular,CNX,1.0,CRM_V2
+C-00398,Ratana Boonmee,ratana.boonmee398@example.com,+66811776243,21/06/2022,N/A,Chiang Mai,,CRM_V2
+C-00685,Preecha Kaewmanee,preecha.kaewmanee685@example.com,085-316-2020,04/20/2022, Regular,Chiang Mai,31.0,CRM_V2
+C-00395,Anan Charoensuk,anan.charoensuk395@example.com,+66813173449,2022-03-12,3,เชียงใหม่,30.0,CRM_V2
+C-00536,Pim Boonmee,pim.boonmee536@example.com,0893657951,2023-05-29, Regular,ขอนแก่น,31.0,CRM_V2
+C-00114,Somchai Phanuwat,somchai.phanuwat114@example.com,+66823913362,2024-02-29,,CNX,19.0,CRM_V2
+C-00724,Somchai Boonmee,somchai.boonmee724@example.com,+66875898712,11-Apr-2023,New,Bangkok,7.0,CRM_LEGACY
+C-00798,Thanapon Rattanakul,thanapon.rattanakul798@example.com,085-339-4423,12/19/2021,new,ขอนแก่น,20.0,CRM_V2
+C-00207,Wichai Boonmee,wichai.boonmee207@example.com,0882660733,2023-07-11,3,Khon Kaen,21.0,CRM_V2
+C-00305,Ratana Charoensuk,ratana.charoensuk305@example.com,081-493-2008,09/07/2022,New,Khon Kaen,5.0,CRM_V2
+C-00286,Waree Rattanakul,waree.rattanakul286@example.com,+66886967253,05/27/2023,regular,Chonburi,,CRM_LEGACY_MIGRATED
+C-00621,Pim Kaewmanee,pim.kaewmanee621@example.com,0833007054,12-Mar-2022,New,ขอนแก่น,15.0,CRM_V2
+C-00226,Thanapon Suksawat,thanapon.suksawat226@example.com,0804424923,15-May-2023,new,CNX,7.0,CRM_LEGACY
+C-00461,Somsak Kaewmanee,somsak.kaewmanee461@example.com,0880105534,2023-04-17,REGULAR,กรุงเทพ,35.0,CRM_V2
+C-00121,Malee Chaiyaporn,malee.chaiyaporn121@example.com,+66898597434,10/07/2023,, CNX ,0.0,CRM_V2
+C-00372,Pim Sukjai,pim.sukjai372@example.com,086-023-9402,21/06/2022,REGULAR,Chiang Mai,8.0,CRM_V2
+C-00222,Waree Boonmee,waree.boonmee222@example.com,0804183422,2024-02-11,Regular,Chonburi,23.0,CRM_LEGACY
+C-00397,Somsak Charoensuk,somsak.charoensuk397@example.com,+66801973093,2024-02-14,,Chonburi,35.0,CRM_V2
+C-00172,Waree Suksawat,waree.suksawat172@example.com,+66880005054,10/28/2023, Regular,กรุงเทพ,17.0,CRM_V2
+C-00732,Chai Kaewmanee, chai.kaewmanee732@example.com  ,+66829098827,05/01/2023,,ขอนแก่น,,CRM_V2
+C-00632,Siriporn Sukjai,siriporn.sukjai632@example.com,089-608-7487,28/10/2023,Regular,Phuket,21.0,CRM_V2
+C-00566,Nattaya Suksawat,nattaya.suksawat566@example.com,083-066-3887,08/06/2022,NEW,กรุงเทพ,0.0,CRM_V2
+C-00640,Chai Chaiyaporn,chai.chaiyaporn640@example.com,+66864262388,2023-09-27,REGULAR,Chonburi,7.0,CRM_V2
+C-00375,Waree Boonmee,waree.boonmee375@example.com,089-637-6444,2022-03-07,NEW,เชียงใหม่,9.0,CRM_V2
+C-00124,Somsak Rattanakul,somsak.rattanakul124@example.com,+66850612893,03/07/2023,vip,ภูเก็ต,5.0,CRM_V2
+C-00477,Siriporn Wongsawat,siriporn.wongsawat477@example.com,0875249978,2023-12-16,Vip,ภูเก็ต,10.0,CRM_V2
+C-00181,Malee Charoensuk,malee.charoensuk181@example.com,0843567190,09/02/2022,Regular,Khon Kaen,14.0,CRM_V2
+C-00162,Kittipong Thongdee,kittipong.thongdee162@example.com,088-752-7726,02/05/2023,Regular,BKK,22.0,CRM_LEGACY
+C-00582,Malee Wongsawat,malee.wongsawat582@example.com,0836449672,20/04/2024,N/A,Pattaya,12.0,CRM_V2
+C-00797,Siriporn Phanuwat,siriporn.phanuwat797@example.com,081-622-6571,10/02/2024,2,Pattaya,29.0,CRM_V2
+C-00118,Wichai Kaewmanee,wichai.kaewmanee118@example.com,085-654-7056,08/03/2024,regular, Bangkok ,,CRM_V2
+C-00583,Somsak Rattanakul,SOMSAK.RATTANAKUL583@EXAMPLE.COM,086-582-5321,2023-11-03,new,CNX,13.0,CRM_V2
+C-00555,Ratana Rattanakul,ratana.rattanakul555@example.com,0817826415,07/24/2022,regular,bangkok,2.0,CRM_V2
+C-00516,Preecha Kaewmanee,preecha.kaewmanee516@example.com,0873972950,17/08/2022,REGULAR,Chonburi,30.0,CRM_LEGACY_MIGRATED
+C-00547,Thanapon Charoensuk,thanapon.charoensuk547 at example.com,089-589-1612,23-Feb-2024,regular,กรุงเทพ,,CRM_V2
+C-00241,Somsak Suksawat,somsak.suksawat241@example.com,0837775136,2023-07-17,New,ชลบุรี,17.0,CRM_V2
+C-00135,Siriporn Suksawat,siriporn.suksawat135@example.com,0813426610,18/08/2022,N/A,ภูเก็ต,,CRM_V2
+C-00156,Ratana Thongdee,ratana.thongdee156@example.com,084-248-4841,2022-04-30,N/A,bangkok,,CRM_V2
+C-00140,Siriporn Rattanakul,siriporn.rattanakul140@example.com,+66886923773,2023-04-02,N/A,bangkok,1.0,CRM_V2
+C-00331,Nattaya Rattanakul,nattaya.rattanakul331@example.com,0868532318,11/01/2023,,CNX,21.0,CRM_V2
+C-00061,Wichai Phanuwat,wichai.phanuwat61@example.com,+66885188272,03-Jan-2024,N/A,HKT,12.0,CRM_V2
+C-00476,Preecha Suksawat,preecha.suksawat476@example.com,+66849041847,31/03/2023,REGULAR,Bangkok,8.0,CRM_LEGACY
+C-00166,Somchai Charoensuk,somchai.charoensuk166@example.com,+66855426300,03/12/2022,,Khon Kaen,,CRM_V2
+C-00301,Chai Suksawat,chai.suksawat301@example.com,0873866968,25/01/2024,1, Bangkok ,30.0,CRM_V2
+C-00412,Suda Chaiyaporn,suda.chaiyaporn412@example.com,085-868-2751,26/01/2024, Regular,Bangkok,31.0,CRM_V2
+C-00500,Waree Kaewmanee, waree.kaewmanee500@example.com  ,084-907-5374,02/05/2024, Regular,CNX,16.0,CRM_V2
+C-00298,Somsak Boonmee,somsak.boonmee298@example.com,086-043-1605,10/07/2022, Regular,เชียงใหม่,32.0,CRM_V2
+C-00132,Pim Boonmee,pim.boonmee132@example.com,0887513866,10/01/2023,REGULAR,เชียงใหม่,-8.0,CRM_LEGACY
+C-00315,Nattaya Wongsawat,nattaya.wongsawat315@example.com,081-705-0043,22-Jun-2023,NEW,ชลบุรี,37.0,CRM_V2
+C-00750,Somchai Boonmee, somchai.boonmee750@example.com  ,083-984-9421,2023-12-03,REGULAR,Chiang Mai,0.0,CRM_LEGACY
+C-00607,Pim Chaiyaporn,pim.chaiyaporn607@example.com,082-648-3053,19/09/2022,1,bangkok,24.0,CRM_V2
+C-00432,Anan Phanuwat,anan.phanuwat432@example.com,087-196-9868,2021-12-17,REGULAR,CNX,1.0,CRM_LEGACY_MIGRATED
+C-00039,Malee Chaiyaporn,malee.chaiyaporn39@example.com,0884690723,2023-09-25,New,CNX,14.0,CRM_V2
+C-00250,Wichai Thongdee,wichai.thongdee250@example.com,+66874112421,2024-04-24,Regular, bangkok ,5.0,CRM_V2
+C-00054,Chai Sukjai,chai.sukjai54@example.com,+66853333151,11/16/2023,NEW,Chonburi,23.0,CRM_V2
+C-00195,Nattaya Rattanakul,nattaya.rattanakul195@example.com,0857662652,10/01/2022,1,ขอนแก่น,24.0,CRM_V2
+C-00137,Preecha Sukjai,preecha.sukjai137@example.com,088-055-5919,12/07/2023,1,ขอนแก่น,30.0,CRM_V2
+C-00380,Kittipong Charoensuk,kittipong.charoensuk380@example.com,0808712143,2023-12-20,new,Khon Kaen,28.0,CRM_V2
+C-00554,Somchai Kaewmanee,somchai.kaewmanee554@example.com,+66839269352,08/09/2023,N/A,CNX,7.0,CRM_V2
+C-00282,Somsak Sukjai,somsak.sukjai282@example.com,089-970-2427,19/01/2022,New,Phuket,29.0,CRM_LEGACY
+C-00036,Ratana Kaewmanee,ratana.kaewmanee36@example.com,+66827495822,10/17/2022, Regular,Khon Kaen,12.0,CRM_LEGACY
+C-00781,Ratana Chaiyaporn,ratana.chaiyaporn781@example.com,081-990-6745,13/12/2023,N/A,ชลบุรี,3.0,CRM_V2
+C-00511,Ratana Chaiyaporn,ratana.chaiyaporn511@example.com,0873611015,2022-09-28,Regular,CNX,15.0,CRM_V2
+C-00067,Preecha Wongsawat,preecha.wongsawat67@example.com,+66847964670,19/08/2022,New,Chonburi,19.0,CRM_V2
+C-00711,Somsak Phanuwat,somsak.phanuwat711 at example.com,0807315813,13/02/2023,Regular,Phuket,5.0,CRM_V2
+C-00378,Somchai Phanuwat,somchai.phanuwat378@example.com,+66812227523,22-Dec-2022,,ขอนแก่น,21.0,CRM_V2
+C-00053,Wichai Wongsawat,wichai.wongsawat53@example.com,+66888080098,2023-03-20,Regular,ชลบุรี,27.0,CRM_LEGACY
+C-00256,Kittipong Wongsawat,dup_wichai.sukjai256@example.com,084-559-4171,2022-08-30,New,Khon Kaen,,CRM_V2
+C-00739,Malee Boonmee,malee.boonmee739@example.com,083-615-9525,2022-03-01,NEW,เชียงใหม่,0.0,CRM_LEGACY_MIGRATED
+C-00789,Somsak Suksawat,somsak.suksawat789@example.com,+66876681943,22/06/2023,New,Bangkok,9.0,CRM_LEGACY
+C-00240,Thanapon Wongsawat,thanapon.wongsawat240@example.com,086-325-4273,2022-12-07,,Bangkok,19.0,CRM_LEGACY_MIGRATED
+C-00247,Somchai Boonmee,somchai.boonmee247@example.com,+66803374265,23-Dec-2021,3,เชียงใหม่,19.0,CRM_LEGACY
+C-00029,Kittipong Boonmee,kittipong.boonmee29@example.com,0810029671,23/10/2022,Regular,HKT,12.0,CRM_V2
+C-00176,Kittipong Suksawat,dup_nattaya.boonmee176@example.com,0880051605,14/12/2023,2,กรุงเทพ,7.0,CRM_V2
+C-00266,Siriporn Boonmee,siriporn.boonmee266@example.com,0847271366,2022-08-02,regular,Chiang Mai,35.0,CRM_V2
+C-00245,Chai Wongsawat,chai.wongsawat245@example.com,+66887750984,12/01/2022, Regular,CNX,0.0,CRM_V2
+C-00104,Suda Rattanakul,,+66802756234,2022-10-08,1, Chonburi ,25.0,CRM_LEGACY
+C-00277,Thanapon Kaewmanee,thanapon.kaewmanee277@example.com,089-333-4058,09/06/2022, Regular,ขอนแก่น,34.0,CRM_V2
+C-00111,Wichai Rattanakul,wichai.rattanakul111@example.com,082-896-0979,2021-12-27,regular,Chiang Mai,38.0,CRM_LEGACY
+C-00419,Somsak Rattanakul,somsak.rattanakul419@example.com,0812744523,19/09/2022,2,Chonburi,17.0,CRM_LEGACY
+C-00160,Preecha Phanuwat,preecha.phanuwat160@example.com,+66872787962,01/06/2022,regular,Khon Kaen,18.0,CRM_V2
+C-00236,Chai Charoensuk,chai.charoensuk236@example.com,0853957146,2022-05-16,new, Chiang Mai ,31.0,CRM_V2
+C-00392,Anan Boonmee,anan.boonmee392@example.com,0888342525,08/02/2022,Vip,Bangkok,21.0,CRM_V2
+C-00113,Thanapon Charoensuk,thanapon.charoensuk113@example.com,0818787068,01/26/2024,2,bangkok,13.0,CRM_V2
+C-00460,Thanapon Kaewmanee,thanapon.kaewmanee460@example.com,+66896667314,2024-01-02,New,Phuket,36.0,CRM_LEGACY_MIGRATED
+C-00714,Somchai Wongsawat,somchai.wongsawat714@example.com,+66844490722,24-Mar-2024,REGULAR,ขอนแก่น,21.0,CRM_V2
+C-00519,Ratana Charoensuk,ratana.charoensuk519@example.com,+66857809697,18-Mar-2023,NEW,ภูเก็ต,4.0,CRM_LEGACY_MIGRATED
+C-00683,Malee Rattanakul,malee.rattanakul683@example.com,083-756-6245,23-Feb-2022,,ภูเก็ต,16.0,CRM_V2
+C-00487,Nattaya Boonmee,nattaya.boonmee487@example.com,+66815946623,15-Nov-2022,vip,ชลบุรี,40.0,CRM_LEGACY_MIGRATED
+C-00263,Wichai Boonmee,wichai.boonmee263@example.com,+66853484006,10/12/2022,Regular,CNX,21.0,CRM_LEGACY_MIGRATED
+C-00224,Wichai Boonmee,wichai.boonmee224@example.com,0803571335,31/01/2022, Regular,ขอนแก่น,40.0,CRM_V2
+C-00704,Anan Boonmee,dup_malee.rattanakul704@example.com,+66867118994,11/01/2024,New,bangkok,37.0,CRM_V2
+C-00394,Malee Thongdee,malee.thongdee394@example.com,0831969870,01/01/2022,3,เชียงใหม่,27.0,CRM_V2
+C-00619,Ratana Boonmee,ratana.boonmee619@example.com,0854749381,11/11/2022,New,HKT,15.0,CRM_V2
+C-00764,Waree Suksawat,waree.suksawat764@example.com,088-070-0846,25/09/2023, Regular,Chonburi,36.0,CRM_LEGACY
+C-00710,Nattaya Kaewmanee,nattaya.kaewmanee710@example.com,+66818241577,28/01/2024,,HKT,18.0,CRM_V2
+C-00168,Chai Chaiyaporn,chai.chaiyaporn168@example.com,0852662938,02/02/2023,NEW,Phuket,,CRM_LEGACY
+C-00387,Malee Sukjai,malee.sukjai387@example.com,+66837421126,2023-02-21,regular,CNX,34.0,CRM_V2
+C-00242,Chai Chaiyaporn,CHAI.CHAIYAPORN242@EXAMPLE.COM,085-825-1906,30-Jul-2022,New,Phuket,18.0,CRM_V2
+C-00664,Pim Boonmee,pim.boonmee664@example.com,086-825-4786,2023-10-02,Regular,HKT,17.0,CRM_V2
+C-00573,Somchai Kaewmanee,somchai.kaewmanee573@example.com,+66848463197,10/08/2023,regular,Khon Kaen,35.0,CRM_V2
+C-00779,Wichai Chaiyaporn,wichai.chaiyaporn779@example.com,+66859993037,07/01/2024, Regular,Khon Kaen,11.0,CRM_V2
+C-00025,Wichai Thongdee,wichai.thongdee25@example.com,+66806617861,23/03/2022,Regular,Chonburi,36.0,CRM_V2
+C-00295,Waree Chaiyaporn,waree.chaiyaporn295@example.com,088-559-5540,09/07/2022,Regular,Chiang Mai,18.0,CRM_V2
+C-00523,Suda Kaewmanee,suda.kaewmanee523@example.com,085-903-4913,27/01/2022,regular,ภูเก็ต,12.0,CRM_V2
+C-00763,Thanapon Rattanakul,thanapon.rattanakul763@example.com,087-830-1304,17/07/2023,Regular,ภูเก็ต,23.0,CRM_V2
+C-00694,Somchai Suksawat,somchai.suksawat694@example.com,086-367-1969,28-Feb-2023,new,CNX,11.0,CRM_V2
+C-00151,Kittipong Phanuwat,kittipong.phanuwat151@example.com,081-111-2527,20/12/2023, Regular,BKK,26.0,CRM_LEGACY
+C-00042,Malee Wongsawat,malee.wongsawat42@example.com,080-271-1595,02/02/2022,new,CNX,2.0,CRM_V2
+C-00347,Wichai Phanuwat,wichai.phanuwat347 at example.com,0886090867,2023-04-03,regular,Chiang Mai,,CRM_V2
+C-00095,Preecha Kaewmanee,preecha.kaewmanee95@example.com,0840752564,02/13/2024,REGULAR,Chonburi,39.0,CRM_V2
+C-00420,Nattaya Chaiyaporn,nattaya.chaiyaporn420@example.com,+66893013730,18/05/2023,REGULAR,Khon Kaen,16.0,CRM_LEGACY
+C-00218,Pim Wongsawat,PIM.WONGSAWAT218@EXAMPLE.COM,+66851847179,20/11/2022,regular,ขอนแก่น,18.0,CRM_V2
+C-00631,Anan Chaiyaporn,anan.chaiyaporn631@example.com,087-741-6207,04/12/2023,2,กรุงเทพ,17.0,CRM_V2
+C-00382,Chai Kaewmanee,chai.kaewmanee382@example.com,+66812764471,2023-01-04,3,ชลบุรี,15.0,CRM_V2
+C-00024,Kittipong Phanuwat,kittipong.phanuwat24@example.com,+66867910116,2023-10-22,Regular,Chonburi,3.0,CRM_V2
+C-00269,Ratana Thongdee,ratana.thongdee269@example.com,+66858756987,19-Apr-2022,New,กรุงเทพ,31.0,CRM_V2
+C-00389,Kittipong Thongdee,kittipong.thongdee389@example.com,+66895977173,12-Sep-2023, Regular,ขอนแก่น,0.0,CRM_LEGACY_MIGRATED
+C-00353,Waree Phanuwat,waree.phanuwat353@example.com,087-951-7244,2022-11-04,,HKT,,CRM_V2
+C-00293,Anan Suksawat,anan.suksawat293@example.com,081-101-8879,17/12/2021,NEW,กรุงเทพ,21.0,CRM_V2
+C-00201,Waree Sukjai,waree.sukjai201@example.com,+66865354563,08/07/2023,vip,ภูเก็ต,39.0,CRM_V2
+C-00174,Nattaya Sukjai,nattaya.sukjai174@example.com,083-440-9375,2022-01-29, Regular,เชียงใหม่,,CRM_V2
+C-00101,Anan Phanuwat,anan.phanuwat101@example.com,081-139-3683,19-Mar-2023,New,ชลบุรี,23.0,CRM_V2
+C-00736,Thanapon Boonmee,thanapon.boonmee736@example.com,+66840853104,2024-05-20,,bangkok,13.0,CRM_V2
+C-00092,Waree Rattanakul,waree.rattanakul92@example.com,082-629-5735,22/07/2023,Regular, ชลบุรี ,12.0,CRM_LEGACY_MIGRATED
+C-00622,Waree Thongdee,waree.thongdee622@example.com,080-900-0978,12/02/2024,New,กรุงเทพ,22.0,CRM_V2
+C-00769,Suda Suksawat,suda.suksawat769@example.com,+66800517105,2023-08-05,New,Khon Kaen,11.0,CRM_LEGACY_MIGRATED
+C-00457,Waree Chaiyaporn,waree.chaiyaporn457@example.com,082-063-9839,04/09/2022,regular,Phuket,23.0,CRM_V2
+C-00525,Somsak Suksawat,somsak.suksawat525@example.com,0836923738,11-May-2022,Vip,CNX,23.0,CRM_V2
+C-00468,Siriporn Wongsawat,siriporn.wongsawat468@example.com,0822473340,20-Apr-2022,regular,ภูเก็ต,22.0,CRM_V2
+C-00223,Waree Boonmee,waree.boonmee223@example.com,0847488221,2024-05-08,New,ชลบุรี,33.0,CRM_LEGACY_MIGRATED
+C-00215,Wichai Charoensuk,,081-762-5226,2024-03-12, Regular,ขอนแก่น,40.0,CRM_LEGACY
+C-00189,Pim Thongdee,pim.thongdee189@example.com,083-428-0012,31-Jan-2023,N/A,เชียงใหม่,31.0,CRM_V2
+C-00355,Kittipong Charoensuk,kittipong.charoensuk355@example.com,+66808666624,03/01/2024,New,HKT,3.0,CRM_LEGACY
+C-00433,Chai Boonmee,chai.boonmee433@example.com,+66857310916,2023-08-10,REGULAR, ขอนแก่น ,33.0,CRM_V2
+C-00728,Suda Boonmee,suda.boonmee728@example.com,+66801447257,26/02/2022,regular,CNX,30.0,CRM_LEGACY_MIGRATED
+C-00576,Waree Boonmee,waree.boonmee576@example.com,082-036-5794,21-Sep-2022,New,Chonburi,17.0,CRM_LEGACY
+C-00354,Anan Kaewmanee,anan.kaewmanee354@example.com,0837339089,05/04/2023,2, Chiang Mai ,32.0,CRM_V2
+C-00077,Anan Charoensuk,anan.charoensuk77@example.com,087-238-5728,2023-06-28,Regular,ขอนแก่น,8.0,CRM_V2
+C-00243,Somsak Chaiyaporn,somsak.chaiyaporn243@example.com,0897310733,09/11/2023, Regular,เชียงใหม่,4.0,CRM_V2
+C-00389,Kittipong Thongdee,kittipong.thongdee389@example.com,+66895977173,12-Sep-2023, Regular,ขอนแก่น,0.0,CRM_LEGACY_MIGRATED
+C-00074,Wichai Charoensuk,wichai.charoensuk74@example.com,0836281353,01/08/2023,new,HKT,7.0,CRM_V2
+C-00085,Somchai Rattanakul,dup_siriporn.chaiyaporn85@example.com,0879788765,11/12/2022,VIP,ชลบุรี,8.0,CRM_LEGACY_MIGRATED
+C-00538,Ratana Charoensuk,ratana.charoensuk538@example.com,0827534388,26/06/2023,New,Chonburi,20.0,CRM_V2
+C-00794,Nattaya Boonmee,nattaya.boonmee794@example.com,0869631073,05/01/2024,NEW,HKT,26.0,CRM_LEGACY_MIGRATED
+C-00348,Malee Rattanakul,malee.rattanakul348@example.com,080-226-2608,29-Jul-2023,NEW,ภูเก็ต,13.0,CRM_V2
+C-00119,Preecha Charoensuk,preecha.charoensuk119@example.com,0846377177,01/10/2023,NEW,Khon Kaen,,CRM_V2
+C-00615,Nattaya Sukjai,nattaya.sukjai615@example.com,0850980335,19/02/2024,Regular,ชลบุรี,,CRM_V2
+C-00729,Suda Suksawat,suda.suksawat729@example.com,083-155-1233,03/20/2022, Regular,ภูเก็ต,24.0,CRM_V2
+C-00655,Chai Thongdee,chai.thongdee655@example.com,+66807602485,04-Jun-2023,,Pattaya,3.0,CRM_LEGACY
+C-00700,Nattaya Wongsawat,nattaya.wongsawat700@example.com,+66885054136,08-Feb-2023,New,Pattaya,39.0,CRM_LEGACY
+C-00006,Chai Thongdee,,0868513199,27/09/2022,,Khon Kaen,16.0,CRM_V2
+C-00453,Somsak Sukjai,somsak.sukjai453@example.com,088-797-8599,01/04/2022,REGULAR,ภูเก็ต,37.0,CRM_LEGACY
+C-00716,Waree Chaiyaporn,waree.chaiyaporn716@example.com,+66820422131,06/27/2022,Regular,ขอนแก่น,6.0,CRM_V2
+C-00440,Thanapon Rattanakul,thanapon.rattanakul440@example.com,0832374812,02/11/2022,Vip,CNX,30.0,CRM_V2
+C-00070,Preecha Wongsawat,preecha.wongsawat70@example.com,0872435491,26/03/2024,NEW,Chonburi,40.0,CRM_V2
+C-00015,Chai Thongdee,,0878461989,06/04/2023, Regular,BKK,2.0,CRM_V2
+C-00522,Pim Boonmee,dup_wichai.charoensuk522@example.com,0873432380,12/31/2022,regular,กรุงเทพ,7.0,CRM_V2
+C-00678,Ratana Boonmee,ratana.boonmee678@example.com,082-046-8359,05-May-2022,regular,Chonburi,,CRM_LEGACY
+C-00370,Ratana Sukjai,ratana.sukjai370@example.com,0898151581,22/10/2022,3,ขอนแก่น,34.0,CRM_V2
+C-00079,Ratana Sukjai,ratana.sukjai79@example.com,0833776661,2023-08-21,new,CNX,30.0,CRM_V2
+C-00203,Preecha Phanuwat,preecha.phanuwat203@example.com,+66899075152,2023-12-01,NEW,Pattaya,,CRM_V2
+C-00497,Ratana Suksawat,ratana.suksawat497@example.com,083-909-7409,2022-05-25,new,ภูเก็ต,2.0,CRM_V2
+C-00612,Anan Thongdee,anan.thongdee612@example.com,081-126-7030,08-Dec-2022, Regular,bangkok,38.0,CRM_V2
+C-00005,Preecha Kaewmanee,preecha.kaewmanee5@example.com,089-598-0765,2022-04-06,N/A,Bangkok,10.0,CRM_V2
+C-00553,Somchai Thongdee,somchai.thongdee553@example.com,0896940838,16-Feb-2022,Vip,CNX,27.0,CRM_LEGACY_MIGRATED
+C-00628,Malee Chaiyaporn,malee.chaiyaporn628@example.com,0828886530,21/04/2024,Regular,ขอนแก่น,38.0,CRM_LEGACY
+C-00686,Malee Sukjai,malee.sukjai686@example.com,+66893513826,2024-01-17,new,Bangkok,11.0,CRM_V2
+C-00267,Somchai Chaiyaporn,somchai.chaiyaporn267@example.com,084-615-5810,15-Feb-2023,1,ชลบุรี,23.0,CRM_LEGACY
+C-00800,Malee Charoensuk,malee.charoensuk800@example.com,0858221085,2024-03-31,N/A,ภูเก็ต,13.0,CRM_V2
+C-00294,Nattaya Phanuwat,nattaya.phanuwat294@example.com,081-014-1418,21/04/2024, Regular,เชียงใหม่,9.0,CRM_V2
+C-00072,Preecha Wongsawat,preecha.wongsawat72@example.com,0819167685,10/03/2024,regular,BKK,17.0,CRM_V2
+C-00542,Malee Phanuwat,malee.phanuwat542@example.com,+66893391892,18/10/2022,NEW,ภูเก็ต,23.0,CRM_V2
+C-00003,Thanapon Rattanakul,thanapon.rattanakul3@example.com,082-296-6171,08/30/2023,REGULAR,Chonburi,24.0,CRM_V2
+C-00026,Preecha Charoensuk,preecha.charoensuk26@example.com,087-928-5447,07-Jul-2023,Vip,bangkok,23.0,CRM_LEGACY
+C-00309,Siriporn Suksawat,siriporn.suksawat309@example.com,+66815997894,2022-06-15,new,Bangkok,10.0,CRM_V2
+C-00217,Chai Sukjai,chai.sukjai217@example.com,088-754-8095,11/05/2022,New,HKT,25.0,CRM_V2
+C-00344,Suda Phanuwat,suda.phanuwat344@example.com,089-947-1375,2023-04-09, Regular,กรุงเทพ,40.0,CRM_V2
+C-00719,Somsak Phanuwat,somsak.phanuwat719@example.com,089-545-4018,26/11/2022,Regular,ชลบุรี,7.0,CRM_V2
+C-00734,Suda Thongdee,suda.thongdee734@example.com,086-785-4381,23/12/2022,N/A,กรุงเทพ,14.0,CRM_V2
+C-00167,Thanapon Rattanakul,thanapon.rattanakul167@example.com,084-300-7552,11/04/2023,Regular,Khon Kaen,27.0,CRM_LEGACY
+C-00682,Thanapon Thongdee,thanapon.thongdee682@example.com,0862657891,12/01/2022,,กรุงเทพ,29.0,CRM_V2
+C-00569,Waree Rattanakul,waree.rattanakul569 at example.com,0811159670,15/01/2022,REGULAR,Khon Kaen,37.0,CRM_V2
+C-00332,Pim Rattanakul,pim.rattanakul332@example.com,080-035-1469,04/18/2024,2,Khon Kaen,21.0,CRM_V2
+C-00178,Somchai Rattanakul,SOMCHAI.RATTANAKUL178@EXAMPLE.COM,+66875141688,07/08/2022,NEW,HKT,38.0,CRM_V2
+C-00376,Siriporn Rattanakul, siriporn.rattanakul376@example.com  ,082-050-2980,2022-07-09,Regular,Pattaya,26.0,CRM_V2
+C-00438,Ratana Sukjai,ratana.sukjai438@example.com,0883390461,2023-12-28,N/A,Bangkok,35.0,CRM_V2
+C-00248,Pim Chaiyaporn,pim.chaiyaporn248@example.com,0810374158,2024-02-06,regular, กรุงเทพ ,,CRM_LEGACY
+C-00374,Kittipong Sukjai,kittipong.sukjai374@example.com,0858035220,10/12/2023, Regular,bangkok,6.0,CRM_V2
+C-00522,Wichai Charoensuk,wichai.charoensuk522@example.com,0873432380,12/31/2022,regular,กรุงเทพ,7.0,CRM_V2
+C-00527,Siriporn Chaiyaporn,siriporn.chaiyaporn527@example.com,086-772-6227,2023-07-01,REGULAR,ขอนแก่น,12.0,CRM_LEGACY
+C-00490,Wichai Wongsawat,wichai.wongsawat490@example.com,0819713993,04/03/2022,regular,ภูเก็ต,10.0,CRM_LEGACY_MIGRATED
+C-00243,Kittipong Phanuwat,dup_somsak.chaiyaporn243@example.com,0897310733,09/11/2023, Regular,เชียงใหม่,4.0,CRM_V2
+C-00597,Preecha Rattanakul,preecha.rattanakul597@example.com,0820714521,2022-04-29,,CHIANG MAI,11.0,CRM_LEGACY_MIGRATED
+C-00637,Suda Chaiyaporn,suda.chaiyaporn637@example.com,0898231971,06/02/2023,regular,Phuket,30.0,CRM_V2
+C-00667,Preecha Kaewmanee,preecha.kaewmanee667@example.com,+66866113608,05/21/2023, VIP ,เชียงใหม่,35.0,CRM_V2
+C-00308,Pim Kaewmanee,pim.kaewmanee308@example.com,+66875714989,2022-03-11,Regular,ชลบุรี,23.0,CRM_V2
+C-00049,Siriporn Chaiyaporn,siriporn.chaiyaporn49@example.com,083-329-6400,2024-02-24,Regular,HKT,14.0,CRM_V2
+C-00481,Preecha Chaiyaporn,preecha.chaiyaporn481@example.com,+66876543034,2023-06-13,regular,Phuket,17.0,CRM_V2
+C-00704,Malee Rattanakul,malee.rattanakul704@example.com,+66867118994,11/01/2024,New,bangkok,37.0,CRM_V2
+C-00055,Ratana Thongdee,ratana.thongdee55@example.com,086-455-6869,12/30/2021, Regular,Chiang Mai,38.0,CRM_V2
+C-00727,Thanapon Phanuwat,thanapon.phanuwat727@example.com,086-493-3803,16-Jul-2023,,Pattaya,39.0,CRM_LEGACY_MIGRATED
+C-00235,Pim Suksawat,pim.suksawat235@example.com,+66844906447,2023-03-24, Regular,ขอนแก่น,8.0,CRM_V2
+C-00115,Waree Chaiyaporn,waree.chaiyaporn115@example.com,088-642-0813,13/01/2024,NEW,CNX,,CRM_V2
+C-00592,Somchai Boonmee,somchai.boonmee592@example.com,0869432477,2023-03-27, Regular,ชลบุรี,27.0,CRM_V2
+C-00431,Wichai Thongdee,wichai.thongdee431@example.com,+66824833568,23/01/2023,New,Bangkok,28.0,CRM_V2
+C-00330,Pim Thongdee,pim.thongdee330@example.com,0871333056,2023-10-02,new,Bangkok,32.0,CRM_V2
+C-00465,Somsak Suksawat,somsak.suksawat465@example.com,084-149-7918,06/09/2023,2,PHUKET,1.0,CRM_LEGACY_MIGRATED
+C-00413,Somchai Charoensuk,somchai.charoensuk413@example.com,080-900-7857,24/06/2023, Regular,CNX,16.0,CRM_LEGACY_MIGRATED
+C-00192,Anan Rattanakul,anan.rattanakul192@example.com,080-759-1609,21/07/2023,regular,Pattaya,10.0,CRM_LEGACY_MIGRATED
+C-00504,Siriporn Rattanakul,siriporn.rattanakul504@example.com,084-642-1468,12/21/2021,2,เชียงใหม่,20.0,CRM_V2
+C-00152,Nattaya Rattanakul,nattaya.rattanakul152@example.com,0871229240,19/12/2021,new,Bangkok,36.0,CRM_V2
+C-00180,Preecha Chaiyaporn,preecha.chaiyaporn180@example.com,+66825569325,24/01/2023,REGULAR,Phuket,20.0,CRM_V2
+C-00436,Suda Wongsawat,suda.wongsawat436@example.com,086-334-9490,03-Mar-2024,regular,HKT,27.0,CRM_V2
+C-00740,Preecha Thongdee,preecha.thongdee740@example.com,084-130-0757,05/06/2022,NEW,Phuket,30.0,CRM_V2
+C-00385,Siriporn Boonmee,siriporn.boonmee385@example.com,+66860988140,07/09/2022,New,HKT,13.0,CRM_V2
+C-00155,Preecha Boonmee,preecha.boonmee155@example.com,0874661886,08/13/2022, Regular,Phuket,21.0,CRM_V2
+C-00713,Pim Chaiyaporn,pim.chaiyaporn713@example.com,0898841302,16-Jun-2022,,Phuket,12.0,CRM_LEGACY
+C-00257,Chai Charoensuk, chai.charoensuk257@example.com  ,+66887096813,21/04/2024,3,Phuket,39.0,CRM_LEGACY
+C-00364,Anan Charoensuk,anan.charoensuk364@example.com,0867562354,02/17/2022, Regular,Khon Kaen,12.0,CRM_V2
+C-00633,Siriporn Rattanakul,siriporn.rattanakul633@example.com,0806337034,20/01/2022,NEW,ขอนแก่น,12.0,CRM_V2
+C-00550,Thanapon Charoensuk,thanapon.charoensuk550@example.com,087-264-3443,16/09/2022,new,HKT,25.0,CRM_V2
+C-00641,Somchai Phanuwat,somchai.phanuwat641@example.com,082-217-4704,12/08/2022,new,Khon Kaen,3.0,CRM_V2
+C-00176,Nattaya Boonmee,nattaya.boonmee176@example.com,0880051605,14/12/2023,2,กรุงเทพ,7.0,CRM_V2
+C-00030,Kittipong Kaewmanee,kittipong.kaewmanee30@example.com,080-254-5673,02-Aug-2023,Regular,Bangkok,40.0,CRM_LEGACY
+C-00127,Suda Rattanakul,suda.rattanakul127@example.com,084-743-4392,01/01/2024,REGULAR,Khon Kaen,21.0,CRM_V2
+C-00580,Preecha Phanuwat,preecha.phanuwat580@example.com,0826508202,12/28/2023,2,Khon Kaen,13.0,CRM_LEGACY_MIGRATED
+C-00071,Chai Phanuwat,chai.phanuwat71@example.com,0876194901,26/07/2023,new,Phuket,4.0,CRM_V2
+C-00660,Somchai Wongsawat,somchai.wongsawat660@example.com,085-817-8807,2022-12-11,Regular,BKK,13.0,CRM_V2
+C-00384,Siriporn Phanuwat,siriporn.phanuwat384@example.com,0849119330,2022-07-03,REGULAR,เชียงใหม่,,CRM_LEGACY
+C-00146,Wichai Suksawat,wichai.suksawat146@example.com,0832284859,04-Feb-2023,new,CNX,14.0,CRM_V2
+C-00666,Kittipong Charoensuk,kittipong.charoensuk666@example.com,0876125270,26-Jul-2023,,Chonburi,11.0,CRM_V2
+C-00730,Waree Phanuwat,waree.phanuwat730@example.com,0844504979,2022-03-24,regular,BKK,0.0,CRM_V2
+C-00216,Siriporn Charoensuk,siriporn.charoensuk216@example.com,+66892622194,2023-01-17,new,เชียงใหม่,12.0,CRM_LEGACY_MIGRATED
+C-00626,Somchai Thongdee,somchai.thongdee626@example.com,089-974-7678,22/06/2023,NEW,ชลบุรี,21.0,CRM_V2
+C-00742,Somchai Chaiyaporn,somchai.chaiyaporn742@example.com,+66830085896,03/05/2023,New,กรุงเทพ,,CRM_V2
+C-00618,Kittipong Kaewmanee,kittipong.kaewmanee618@example.com,+66873495597,22/07/2022,3,กรุงเทพ,31.0,CRM_LEGACY
+C-00197,Nattaya Chaiyaporn,nattaya.chaiyaporn197@example.com,088-172-7470,11-May-2022,new,Chiang Mai,34.0,CRM_LEGACY
+C-00697,Preecha Wongsawat,preecha.wongsawat697@example.com,086-485-7351,2024-01-30,2,Khon Kaen,2.0,CRM_V2
+C-00496,Anan Wongsawat,anan.wongsawat496@example.com,085-315-1148,2023-02-18,NEW,ชลบุรี,,CRM_V2
+C-00018,Pim Charoensuk,pim.charoensuk18@example.com,0834421496,2022-09-10,new,Khon Kaen,39.0,CRM_LEGACY
+C-00639,Somchai Chaiyaporn,somchai.chaiyaporn639@example.com,0810977612,22/10/2022,VIP,Khon Kaen,36.0,CRM_V2
+C-00028,Waree Sukjai,waree.sukjai28@example.com,+66895343273,12/01/2022, Regular,BKK,19.0,CRM_V2
+C-00278,Waree Chaiyaporn,waree.chaiyaporn278@example.com,0834963930,22-Jan-2024,New,HKT,34.0,CRM_LEGACY
+C-00396,Somsak Rattanakul,somsak.rattanakul396@example.com,0845677209,2023-05-27,New,ขอนแก่น,31.0,CRM_V2
+C-00229,Malee Rattanakul,malee.rattanakul229@example.com,+66810415586,03/06/2023,NEW,Chiang Mai,34.0,CRM_V2
+C-00321,Ratana Boonmee,ratana.boonmee321@example.com,+66882821500,28-Jan-2024,new, Pattaya ,30.0,CRM_V2
+C-00148,Waree Chaiyaporn,waree.chaiyaporn148@example.com,+66830381662,16/12/2021,N/A,CNX,27.0,CRM_V2
+C-00780,Kittipong Kaewmanee,kittipong.kaewmanee780@example.com,+66851118062,13/10/2022, Regular,Chiang Mai,29.0,CRM_V2
+C-00495,Chai Suksawat,chai.suksawat495@example.com,084-408-4053,2023-06-22, VIP ,Khon Kaen,37.0,CRM_V2
+C-00450,Ratana Sukjai,ratana.sukjai450@example.com,081-366-0927,04/01/2022,NEW,Bangkok,2.0,CRM_LEGACY
+C-00751,Somchai Sukjai,somchai.sukjai751@example.com,0814399734,19/03/2022,Regular,bangkok,33.0,CRM_LEGACY
+C-00107,Anan Charoensuk,anan.charoensuk107@example.com,0853868726,14/07/2022,N/A,Chonburi,31.0,CRM_V2
+C-00351,Thanapon Wongsawat,thanapon.wongsawat351@example.com,088-628-5160,03/22/2024,,กรุงเทพ,15.0,CRM_LEGACY_MIGRATED
+C-00524,Siriporn Chaiyaporn,siriporn.chaiyaporn524@example.com,080-514-0527,2023-05-18,regular,ขอนแก่น,,CRM_LEGACY
+C-00390,Pim Charoensuk,pim.charoensuk390@example.com,+66890118147,18/08/2023,1,Chonburi,25.0,CRM_LEGACY
+C-00449,Waree Sukjai,waree.sukjai449@example.com,+66893392004,29/10/2022,New,ขอนแก่น,27.0,CRM_V2
+C-00094,Siriporn Kaewmanee,siriporn.kaewmanee94@example.com,+66860089674,09/10/2023,1,Khon Kaen,8.0,CRM_LEGACY_MIGRATED
+C-00260,Waree Charoensuk,waree.charoensuk260@example.com,+66896436356,2023-03-04,new, ขอนแก่น ,,CRM_LEGACY
+C-00777,Siriporn Wongsawat,siriporn.wongsawat777@example.com,088-820-8854,27/05/2022,new,Khon Kaen,23.0,CRM_V2
+C-00171,Malee Chaiyaporn,malee.chaiyaporn171@example.com,+66891377623,13/05/2022,REGULAR,เชียงใหม่,19.0,CRM_V2
+C-00255,Somchai Phanuwat,somchai.phanuwat255@example.com,0809754386,2023-02-24,N/A,Chiang Mai,37.0,CRM_LEGACY
+C-00253,Pim Chaiyaporn,PIM.CHAIYAPORN253@EXAMPLE.COM,084-261-3413,07/11/2023,,CNX,,CRM_V2
+C-00307,Wichai Boonmee,wichai.boonmee307@example.com,0877748138,15/01/2022,New, Phuket ,6.0,CRM_V2
+C-00661,Malee Rattanakul,malee.rattanakul661@example.com,088-879-9657,30/04/2023,NEW,CNX,31.0,CRM_V2
+C-00783,Siriporn Suksawat,siriporn.suksawat783@example.com,+66864102089,15/06/2022,2,ขอนแก่น,14.0,CRM_V2
+C-00429,Pim Boonmee,pim.boonmee429@example.com,+66872019678,01/10/2023,REGULAR,ขอนแก่น,17.0,CRM_V2
+C-00187,Waree Thongdee,waree.thongdee187@example.com,+66855361964,24/05/2024,REGULAR,ภูเก็ต,,CRM_LEGACY
+C-00270,Ratana Thongdee,ratana.thongdee270@example.com,0837082812,31/10/2023,,bangkok,8.0,CRM_V2
+C-00163,Somchai Wongsawat,somchai.wongsawat163@example.com,0875679216,2023-12-07,N/A,CNX,28.0,CRM_LEGACY
+C-00414,Pim Boonmee,pim.boonmee414@example.com,+66831271153,09-Sep-2023,2,Khon Kaen,8.0,CRM_LEGACY
+C-00638,Chai Sukjai,chai.sukjai638@example.com,+66838219452,07-Jan-2022, Regular,ภูเก็ต,12.0,CRM_V2
+C-00651,Pim Sukjai,pim.sukjai651@example.com,+66831148282,2024-03-02,VIP,HKT,34.0,CRM_V2
+C-00099,Waree Rattanakul,waree.rattanakul99@example.com,0870176731,22/07/2023,VIP,Pattaya,37.0,CRM_V2
+C-00007,Somsak Charoensuk,somsak.charoensuk7@example.com,+66871452842,2022-04-20,REGULAR,Chonburi,5.0,CRM_V2
+C-00663,Somsak Sukjai, somsak.sukjai663@example.com  ,0815725234,10/10/2022,regular,HKT,22.0,CRM_V2
+C-00705,Suda Chaiyaporn,suda.chaiyaporn705@example.com,+66869791670,17/11/2023,regular,ขอนแก่น,2.0,CRM_V2
+C-00230,Wichai Suksawat,wichai.suksawat230@example.com,084-918-2319,17-Mar-2022,Regular,bangkok,29.0,CRM_V2
+C-00265,Wichai Kaewmanee,wichai.kaewmanee265@example.com,0813953953,2023-04-09, Regular,Chonburi,27.0,CRM_LEGACY
+C-00369,Nattaya Sukjai,nattaya.sukjai369@example.com,086-053-9721,2024-03-28, Regular,Bangkok,32.0,CRM_LEGACY_MIGRATED
+C-00708,Kittipong Chaiyaporn,kittipong.chaiyaporn708@example.com,0840507948,06/04/2023,N/A,Chiang Mai,3.0,CRM_V2
+C-00712,Pim Sukjai,pim.sukjai712@example.com,088-170-5155,02/03/2023,Regular,Khon Kaen,18.0,CRM_V2
+C-00699,Pim Suksawat,pim.suksawat699@example.com,0825344678,19-Dec-2023,NEW,Phuket,23.0,CRM_V2
+C-00738,Siriporn Chaiyaporn,siriporn.chaiyaporn738@example.com,+66892263205,14/12/2021,,Phuket,30.0,CRM_V2
+C-00404,Somchai Thongdee,somchai.thongdee404@example.com,080-530-7499,08/06/2022,new,Pattaya,5.0,CRM_V2
+C-00600,Siriporn Thongdee, siriporn.thongdee600@example.com  ,085-457-7702,2023-02-12,REGULAR,ขอนแก่น,10.0,CRM_V2
+C-00190,Siriporn Charoensuk,siriporn.charoensuk190@example.com,+66865659235,02-Mar-2023,regular,ชลบุรี,16.0,CRM_V2
+C-00333,Anan Rattanakul,anan.rattanakul333@example.com,080-637-1932,26/07/2022,NEW,Pattaya,15.0,CRM_LEGACY
+C-00304,Kittipong Phanuwat,kittipong.phanuwat304@example.com,084-455-6987,19-Jan-2024, Regular,Khon Kaen,22.0,CRM_V2
+C-00261,Anan Wongsawat,anan.wongsawat261@example.com,0815117971,04/20/2024,REGULAR,เชียงใหม่,3.0,CRM_LEGACY_MIGRATED
+C-00145,Waree Wongsawat,waree.wongsawat145@example.com,+66825796588,29/11/2023,NEW,ชลบุรี,37.0,CRM_V2
+C-00284,Thanapon Sukjai,thanapon.sukjai284@example.com,0836097117,2022-12-15,NEW,Khon Kaen,20.0,CRM_LEGACY_MIGRATED
+C-00706,Waree Wongsawat,waree.wongsawat706@example.com,0861306912,15-May-2024,new,Phuket,11.0,CRM_LEGACY
+C-00012,Suda Phanuwat,suda.phanuwat12@example.com,+66864990650,2023-10-27,2,HKT,13.0,CRM_V2
+C-00674,Pim Boonmee, pim.boonmee674@example.com  ,+66860704161,2023-03-06, VIP ,CHONBURI,,CRM_V2
+C-00532,Chai Wongsawat,chai.wongsawat532@example.com,0862750714,04/11/2022,new,ขอนแก่น,8.0,CRM_V2
+C-00470,Chai Kaewmanee,chai.kaewmanee470@example.com,+66845126963,27/11/2022,New,ขอนแก่น,31.0,CRM_LEGACY
+C-00128,Waree Phanuwat,waree.phanuwat128@example.com,+66895037473,04/01/2023,vip,ภูเก็ต,8.0,CRM_LEGACY
+C-00604,Somsak Kaewmanee,somsak.kaewmanee604@example.com,0854311380,22/08/2023,Regular,ขอนแก่น,,CRM_V2
+C-00058,Suda Suksawat,suda.suksawat58@example.com,083-963-5933,20/02/2022,NEW,ขอนแก่น,38.0,CRM_V2
+C-00034,Ratana Thongdee,ratana.thongdee34@example.com,0839459654,19/12/2022,Regular,ชลบุรี,25.0,CRM_V2
+C-00238,Siriporn Boonmee,siriporn.boonmee238@example.com,086-205-8212,2024-05-18,NEW,Chonburi,,CRM_LEGACY_MIGRATED
+C-00757,Suda Charoensuk,suda.charoensuk757@example.com,0814676680,2024-02-20,Regular,Khon Kaen,0.0,CRM_V2
+C-00283,Thanapon Rattanakul,thanapon.rattanakul283@example.com,080-734-9492,14/01/2024,regular,ขอนแก่น,16.0,CRM_V2
+C-00363,Suda Charoensuk,suda.charoensuk363@example.com,+66865882100,10/04/2022, VIP ,CNX,21.0,CRM_LEGACY
+C-00244,Somsak Rattanakul,,+66842007704,16/08/2022,,ภูเก็ต,9.0,CRM_V2
+C-00093,Wichai Kaewmanee,wichai.kaewmanee93@example.com,+66857212525,22/06/2023,NEW,Chonburi,36.0,CRM_V2
+C-00211,Preecha Kaewmanee,preecha.kaewmanee211@example.com,+66802624906,01/11/2022, VIP ,HKT,1.0,CRM_V2
+C-00338,Ratana Wongsawat,ratana.wongsawat338@example.com,0874456457,28/12/2021,new,CNX,-34.0,CRM_V2
+C-00302,Siriporn Rattanakul,siriporn.rattanakul302@example.com,083-440-1179,12-May-2024, Regular,กรุงเทพ,15.0,CRM_LEGACY
+C-00086,Somchai Suksawat,somchai.suksawat86@example.com,+66848401455,26/02/2022,,Phuket,20.0,CRM_V2
+C-00191,Ratana Thongdee,ratana.thongdee191@example.com,+66867638797,26/02/2023,1,ชลบุรี,,CRM_V2
+C-00040,Anan Chaiyaporn,anan.chaiyaporn40@example.com,+66808961435,2023-03-25, Regular,ภูเก็ต,37.0,CRM_V2
+C-00501,Chai Sukjai,chai.sukjai501@example.com,080-295-1177,16/11/2022,REGULAR,Pattaya,24.0,CRM_V2
+C-00508,Anan Boonmee,anan.boonmee508@example.com,+66858549965,2023-07-16,NEW,ชลบุรี,13.0,CRM_V2
+C-00517,Suda Kaewmanee,suda.kaewmanee517@example.com,0854356586,03-Apr-2022,REGULAR,CNX,26.0,CRM_V2
+C-00105,Waree Chaiyaporn,waree.chaiyaporn105@example.com,083-074-0070,08/08/2022,NEW,ชลบุรี,9.0,CRM_LEGACY
+C-00668,Kittipong Boonmee,kittipong.boonmee668@example.com,+66866753725,2022-04-16, Regular,Chiang Mai,16.0,CRM_LEGACY
+C-00234,Malee Suksawat,malee.suksawat234@example.com,081-204-5674,21/11/2022,1,Khon Kaen,-35.0,CRM_V2
+C-00106,Pim Suksawat,pim.suksawat106@example.com,+66840615372,24-Feb-2022,NEW,CNX,29.0,CRM_V2
+C-00342,Preecha Phanuwat,preecha.phanuwat342@example.com,0846955620,03/03/2023,NEW,Khon Kaen,13.0,CRM_V2
+C-00254,Malee Sukjai,malee.sukjai254@example.com,087-661-9808,01/01/2022,new,Chonburi,26.0,CRM_LEGACY
+C-00409,Siriporn Phanuwat,siriporn.phanuwat409@example.com,086-399-7731,2024-01-02,NEW,Pattaya,35.0,CRM_V2
+C-00423,Thanapon Sukjai,thanapon.sukjai423@example.com,083-636-4891,08/09/2022,New,bangkok,19.0,CRM_V2
+C-00209,Waree Phanuwat,waree.phanuwat209@example.com,089-064-3350,12/11/2023,new,Phuket,33.0,CRM_LEGACY
+C-00765,Nattaya Charoensuk,dup_preecha.wongsawat765@example.com,+66808399385,26/02/2023,regular,Chiang Mai,5.0,CRM_LEGACY
+C-00634,Anan Kaewmanee,anan.kaewmanee634@example.com,088-039-1231,13/01/2022,,ขอนแก่น,40.0,CRM_LEGACY
+C-00083,Kittipong Boonmee,kittipong.boonmee83@example.com,+66884111421,22-Jun-2023,New,Phuket,29.0,CRM_V2
+C-00498,Suda Rattanakul,suda.rattanakul498@example.com,0847477266,08/07/2022,,ภูเก็ต,34.0,CRM_LEGACY
+C-00755,Nattaya Suksawat,nattaya.suksawat755@example.com,083-278-3940,21/11/2022,regular,ภูเก็ต,29.0,CRM_LEGACY
+C-00584,Chai Boonmee,chai.boonmee584 at example.com,0800020479,08/04/2024,NEW,เชียงใหม่,,CRM_V2
+C-00643,Pim Wongsawat,pim.wongsawat643@example.com,0869093655,26/01/2023,N/A,Chonburi,35.0,CRM_LEGACY_MIGRATED
+C-00088,Thanapon Charoensuk,thanapon.charoensuk88 at example.com,+66826558232,10/04/2022,Regular,กรุงเทพ,8.0,CRM_V2
+C-00065,Wichai Boonmee,wichai.boonmee65@example.com,081-179-0278,2023-07-20,REGULAR,CHONBURI,11.0,CRM_LEGACY_MIGRATED
+C-00271,Siriporn Chaiyaporn,siriporn.chaiyaporn271@example.com,+66849030016,10/11/2023, VIP ,Bangkok,2.0,CRM_V2
+C-00606,Pim Suksawat,,088-241-1212,2023-03-14,regular,Phuket,39.0,CRM_V2
+C-00275,Suda Charoensuk,suda.charoensuk275@example.com,087-527-6446,2023-01-22,2,เชียงใหม่,25.0,CRM_LEGACY
+C-00654,Anan Thongdee,ANAN.THONGDEE654@EXAMPLE.COM,0806836072,14/04/2023,N/A, Pattaya ,24.0,CRM_V2
+C-00735,Thanapon Suksawat,thanapon.suksawat735@example.com,0833631181,12/27/2023, Regular,CNX,,CRM_V2
+C-00154,Siriporn Sukjai,siriporn.sukjai154@example.com,0806891914,29/03/2024,NEW,Chiang Mai,36.0,CRM_V2
+C-00614,Pim Phanuwat,pim.phanuwat614 at example.com,0824444844,09/24/2023,new,เชียงใหม่,8.0,CRM_V2
+C-00645,Suda Boonmee,suda.boonmee645@example.com,089-417-2029,01/30/2024,New, Chiang Mai ,29.0,CRM_V2
+C-00411,Somsak Wongsawat,somsak.wongsawat411@example.com,089-394-3514,2022-01-18,Regular,Phuket,29.0,CRM_LEGACY
+C-00518,Ratana Charoensuk,ratana.charoensuk518@example.com,0869164878,25/12/2022,NEW,Khon Kaen,29.0,CRM_LEGACY_MIGRATED
+C-00045,Somsak Phanuwat,somsak.phanuwat45@example.com,0898065933,01/28/2024,vip,bangkok,,CRM_V2
+C-00391,Ratana Phanuwat,ratana.phanuwat391@example.com,0817003108,18/01/2024,N/A,Phuket,15.0,CRM_V2
+C-00221,Pim Suksawat,pim.suksawat221@example.com,0808682904,2023-12-19,regular,Pattaya,,CRM_V2
+C-00141,Waree Rattanakul,waree.rattanakul141@example.com,081-880-1882,04/11/2024, Regular,ขอนแก่น,3.0,CRM_V2
+C-00350,Pim Sukjai,pim.sukjai350@example.com,081-209-5973,2023-07-12, Regular,Phuket,15.0,CRM_V2
+C-00358,Anan Rattanakul,anan.rattanakul358@example.com,0800100247,31/03/2024,Regular,กรุงเทพ,26.0,CRM_V2
+C-00134,Kittipong Sukjai,kittipong.sukjai134@example.com,089-398-7466,24/12/2023,new,ชลบุรี,10.0,CRM_V2
+C-00262,Anan Rattanakul,anan.rattanakul262@example.com,+66810979919,30/12/2022,REGULAR,HKT,22.0,CRM_LEGACY_MIGRATED
+C-00279,Wichai Charoensuk,wichai.charoensuk279@example.com,085-903-3034,2022-10-29,Vip,Khon Kaen,26.0,CRM_V2
+C-00080,Wichai Wongsawat,wichai.wongsawat80@example.com,+66855833710,13/03/2024, Regular,CNX,22.0,CRM_LEGACY
+C-00511,Waree Charoensuk,dup_ratana.chaiyaporn511@example.com,0873611015,2022-09-28,Regular,CNX,15.0,CRM_V2
+C-00116,Thanapon Thongdee,thanapon.thongdee116@example.com,086-801-7539,14/03/2022, VIP ,Bangkok,22.0,CRM_V2
+C-00676,Anan Boonmee,anan.boonmee676@example.com,081-401-9392,2024-02-11,regular,Phuket,25.0,CRM_V2
+C-00692,Chai Kaewmanee,chai.kaewmanee692@example.com,+66865359737,12/08/2023,N/A,ภูเก็ต,8.0,CRM_V2
+C-00381,Suda Phanuwat,suda.phanuwat381@example.com,+66878197130,03/10/2023,Regular,ขอนแก่น,20.0,CRM_V2
+C-00766,Malee Boonmee,malee.boonmee766 at example.com,0864312986,05/31/2024,N/A, ขอนแก่น ,15.0,CRM_V2
+C-00185,Waree Chaiyaporn,waree.chaiyaporn185@example.com,0850820680,31/01/2023,regular,Chonburi,14.0,CRM_V2
+C-00669,Suda Suksawat,suda.suksawat669@example.com,0827857898,25-Nov-2023,regular,Chonburi,24.0,CRM_V2
+C-00359,Suda Rattanakul,suda.rattanakul359@example.com,083-898-9630,20/12/2021,N/A,Phuket,17.0,CRM_V2
+C-00037,Nattaya Charoensuk,nattaya.charoensuk37@example.com,0843493976,01/11/2023,N/A,HKT,12.0,CRM_V2
+C-00340,Chai Phanuwat,chai.phanuwat340@example.com,0866689235,01/02/2023,REGULAR, ขอนแก่น ,2.0,CRM_LEGACY_MIGRATED
+C-00693,Malee Chaiyaporn,malee.chaiyaporn693@example.com,082-629-1888,25/12/2021, Regular, bangkok ,0.0,CRM_LEGACY
+C-00421,Siriporn Sukjai,siriporn.sukjai421@example.com,081-268-8084,12-Jul-2023,1,Chonburi,14.0,CRM_V2
+C-00150,Malee Suksawat,malee.suksawat150@example.com,085-018-0141,2023-02-02,Regular,Chiang Mai,2.0,CRM_LEGACY
+C-00010,Somchai Suksawat,somchai.suksawat10@example.com,+66810397267,2022-07-25,2,Bangkok,10.0,CRM_LEGACY
+C-00046,Thanapon Boonmee,thanapon.boonmee46@example.com,0858277529,26/11/2022,3,Bangkok,8.0,CRM_LEGACY
+C-00096,Ratana Charoensuk,ratana.charoensuk96@example.com,0886870350,13/06/2022,REGULAR,ชลบุรี,29.0,CRM_V2
+C-00744,Somchai Sukjai,somchai.sukjai744@example.com,+66837383904,29/04/2023,N/A, CNX ,-25.0,CRM_LEGACY
+C-00317,Thanapon Wongsawat,thanapon.wongsawat317@example.com,0857506592,24-Sep-2023,Regular,HKT,12.0,CRM_LEGACY
+C-00549,Somsak Suksawat,somsak.suksawat549@example.com,+66814399897,21-Feb-2024,N/A,ขอนแก่น,4.0,CRM_V2
+C-00561,Somchai Rattanakul,somchai.rattanakul561@example.com,+66813277467,2022-05-11,,Khon Kaen,36.0,CRM_V2
+C-00299,Preecha Suksawat,preecha.suksawat299@example.com,082-455-9554,2022-07-26,Regular,BKK,30.0,CRM_V2
+C-00291,Kittipong Kaewmanee,kittipong.kaewmanee291@example.com,084-122-6936,06/03/2024,2,Khon Kaen,13.0,CRM_V2
+C-00416,Wichai Wongsawat,wichai.wongsawat416@example.com,085-128-0438,2024-02-19,,BKK,1.0,CRM_V2
+C-00314,Ratana Thongdee,ratana.thongdee314@example.com,084-015-9181,25/10/2022, VIP ,CNX,8.0,CRM_V2
+C-00422,Wichai Kaewmanee,wichai.kaewmanee422@example.com,0800750419,12/03/2022,,Khon Kaen,7.0,CRM_V2
+C-00658,Wichai Wongsawat,wichai.wongsawat658@example.com,0832817735,06/08/2023,NEW,bangkok,18.0,CRM_V2
+C-00123,Siriporn Suksawat,siriporn.suksawat123 at example.com,0837373294,2024-01-08,N/A,CHIANG MAI,14.0,CRM_V2
+C-00696,Somchai Wongsawat,somchai.wongsawat696@example.com,0853574761,2023-06-09,new,Phuket,5.0,CRM_V2
+C-00677,Ratana Thongdee,ratana.thongdee677@example.com,+66834593148,03/08/2023,New, Bangkok ,7.0,CRM_LEGACY
+C-00362,Anan Kaewmanee,,+66890933276,2024-01-27, Regular,bangkok,13.0,CRM_V2
+C-00337,Nattaya Kaewmanee,nattaya.kaewmanee337@example.com,085-502-2135,2023-11-13,NEW,ชลบุรี,14.0,CRM_LEGACY_MIGRATED
+C-00136,Ratana Chaiyaporn,ratana.chaiyaporn136@example.com,+66834242207,23/02/2024,regular,ชลบุรี,16.0,CRM_V2
+C-00703,Nattaya Chaiyaporn,,0876199760,29/01/2023,Regular,Khon Kaen,13.0,CRM_LEGACY_MIGRATED
+C-00652,Siriporn Charoensuk,siriporn.charoensuk652@example.com,0876870176,2024-03-09,new,Khon Kaen,,CRM_LEGACY
+C-00368,Anan Sukjai,anan.sukjai368@example.com,083-517-7960,29-Dec-2021, Regular,BKK,40.0,CRM_V2
+C-00791,Preecha Wongsawat,preecha.wongsawat791@example.com,083-201-6009,20/03/2024,REGULAR,Khon Kaen,23.0,CRM_V2
+C-00768,Suda Chaiyaporn,suda.chaiyaporn768@example.com,084-916-3577,2023-10-03,regular,ภูเก็ต,35.0,CRM_LEGACY
+C-00620,Waree Thongdee,waree.thongdee620@example.com,0890384814,06/26/2023,N/A,BKK,36.0,CRM_V2
+C-00009,Wichai Phanuwat,wichai.phanuwat9@example.com,0860781151,2023-08-21,VIP,Chiang Mai,27.0,CRM_V2
+C-00098,Anan Boonmee,anan.boonmee98@example.com,+66875904837,04/22/2023, Regular,CNX,34.0,CRM_V2
+C-00799,Siriporn Wongsawat,siriporn.wongsawat799@example.com,+66882428825,2022-01-27,Regular,BKK,38.0,CRM_V2
+C-00349,Preecha Boonmee,preecha.boonmee349@example.com,+66836838436,28/02/2023,Regular,เชียงใหม่,40.0,CRM_LEGACY_MIGRATED
+C-00510,Nattaya Suksawat,nattaya.suksawat510@example.com,0822766264,17/09/2022,NEW,BKK,34.0,CRM_V2
+C-00786,Somsak Rattanakul,somsak.rattanakul786@example.com,0812868723,13/10/2023,N/A,Chiang Mai,28.0,CRM_LEGACY
+C-00022,Pim Phanuwat,pim.phanuwat22@example.com,089-568-7303,10-Jan-2022,regular,CNX,21.0,CRM_V2
+C-00483,Ratana Kaewmanee,ratana.kaewmanee483@example.com,0817814806,16/07/2023,New,HKT,34.0,CRM_V2
+C-00795,Nattaya Thongdee,nattaya.thongdee795@example.com,0843954947,10/01/2024,REGULAR,Chiang Mai,,CRM_LEGACY
+C-00406,Ratana Chaiyaporn,ratana.chaiyaporn406@example.com,084-581-1193,10/11/2023,,ชลบุรี,4.0,CRM_V2
+C-00112,Malee Phanuwat,dup_siriporn.charoensuk112@example.com,0880529393,25-Dec-2021,new,CNX,40.0,CRM_V2
+C-00701,Waree Charoensuk,waree.charoensuk701@example.com,080-737-8518,2022-04-14,new,CNX,33.0,CRM_LEGACY
+C-00479,Malee Phanuwat,malee.phanuwat479@example.com,+66851563586,2021-12-22,Regular,Pattaya,4.0,CRM_V2
+C-00591,Siriporn Sukjai,siriporn.sukjai591@example.com,080-800-1170,02/24/2023, Regular,Phuket,19.0,CRM_LEGACY
+C-00492,Anan Charoensuk,anan.charoensuk492@example.com,+66890812350,24/04/2022,,เชียงใหม่,27.0,CRM_V2
+C-00047,Ratana Sukjai,ratana.sukjai47@example.com,0857475159,19-May-2022, Regular,Chiang Mai,37.0,CRM_V2
+C-00365,Anan Boonmee,anan.boonmee365@example.com,089-748-4739,28-Dec-2023,New,Chonburi,2.0,CRM_LEGACY_MIGRATED
+C-00297,Thanapon Wongsawat,thanapon.wongsawat297@example.com,0880817276,2023-08-01,new,Chonburi,38.0,CRM_V2
+C-00050,Malee Suksawat,malee.suksawat50@example.com,083-526-2183,23/10/2022,Regular,ภูเก็ต,27.0,CRM_LEGACY_MIGRATED
+C-00488,Kittipong Rattanakul,kittipong.rattanakul488@example.com,083-507-6804,2023-06-23,N/A,ขอนแก่น,40.0,CRM_V2
+C-00225,Somsak Kaewmanee,somsak.kaewmanee225@example.com,080-556-5053,03/26/2024,Vip,กรุงเทพ,34.0,CRM_LEGACY
+C-00220,Anan Sukjai,anan.sukjai220@example.com,0807044864,2022-10-08,Regular,ขอนแก่น,28.0,CRM_LEGACY
+C-00775,Malee Phanuwat,malee.phanuwat775@example.com,088-121-2418,2022-08-01,Regular,Chonburi,10.0,CRM_V2
+C-00290,Ratana Wongsawat,dup_preecha.boonmee290@example.com,+66819150579,12/01/2023,REGULAR,Chiang Mai,,CRM_V2
+C-00648,Somchai Chaiyaporn,somchai.chaiyaporn648@example.com,0813101840,29/10/2023,regular,เชียงใหม่,19.0,CRM_V2
+C-00202,Anan Sukjai,anan.sukjai202@example.com,0850270969,08-Feb-2023,,Chiang Mai,36.0,CRM_V2
+C-00563,Somsak Thongdee,somsak.thongdee563@example.com,086-996-1471,03/02/2023,1,เชียงใหม่,26.0,CRM_V2
+C-00623,Ratana Boonmee,ratana.boonmee623@example.com,082-233-1449,2023-08-06,regular,Chonburi,16.0,CRM_V2
+C-00029,Kittipong Boonmee,kittipong.boonmee29@example.com,0810029671,23/10/2022,Regular,HKT,12.0,CRM_V2
+C-00064,Somchai Boonmee,somchai.boonmee64@example.com,087-508-0337,17/03/2022,Regular,Chonburi,5.0,CRM_LEGACY_MIGRATED
+C-00605,Somsak Phanuwat,somsak.phanuwat605@example.com,+66822679320,13-Jul-2023,2,Chiang Mai,0.0,CRM_LEGACY
+C-00246,Somchai Chaiyaporn,somchai.chaiyaporn246@example.com,089-623-1648,11/05/2022,,Pattaya,29.0,CRM_V2
+C-00443,Somsak Kaewmanee,somsak.kaewmanee443@example.com,+66899020743,23/01/2022,1,Chonburi,15.0,CRM_LEGACY
+C-00722,Malee Phanuwat,malee.phanuwat722@example.com,+66822604300,21/06/2023,2,เชียงใหม่,26.0,CRM_V2
+C-00575,Thanapon Kaewmanee,thanapon.kaewmanee575@example.com,0897682583,05-May-2023,Vip,Pattaya,12.0,CRM_LEGACY
+C-00001,Thanapon Chaiyaporn,thanapon.chaiyaporn1@example.com,+66802501652,22-Aug-2023,,BKK,6.0,CRM_V2
+C-00540,Anan Phanuwat,anan.phanuwat540@example.com,+66833138787,10/27/2022,Regular,HKT,38.0,CRM_LEGACY
+C-00690,Nattaya Boonmee,nattaya.boonmee690@example.com,0806918827,26-Apr-2024,2,เชียงใหม่,33.0,CRM_V2
+C-00188,Nattaya Boonmee,nattaya.boonmee188@example.com,0847344596,25/05/2022, Regular,Chonburi,30.0,CRM_V2
+C-00407,Nattaya Boonmee,nattaya.boonmee407@example.com,0825970879,07/04/2024,,Khon Kaen,17.0,CRM_LEGACY_MIGRATED
+C-00149,Chai Suksawat,chai.suksawat149@example.com,084-619-4719,13/05/2024,Regular,ภูเก็ต,19.0,CRM_V2
+C-00027,Pim Kaewmanee,pim.kaewmanee27@example.com,083-872-0907,11-Nov-2022, Regular,HKT,31.0,CRM_V2
+C-00462,Somsak Charoensuk,somsak.charoensuk462@example.com,+66896747777,02/13/2022,N/A,HKT,,CRM_LEGACY_MIGRATED
+C-00671,Somsak Suksawat,somsak.suksawat671@example.com,+66811663581,12/04/2022,REGULAR,CNX,18.0,CRM_LEGACY_MIGRATED
+C-00656,Malee Suksawat,malee.suksawat656@example.com,088-972-7965,08-Jan-2023,regular,Chiang Mai,3.0,CRM_V2
+C-00060,Anan Thongdee,anan.thongdee60@example.com,0896772297,2023-05-22,REGULAR,CNX,10.0,CRM_V2
+C-00715,Malee Sukjai,malee.sukjai715@example.com,+66882889369,2023-10-16,3,Chonburi,20.0,CRM_V2
+C-00327,Suda Rattanakul,suda.rattanakul327@example.com,0863212303,19-Mar-2024,NEW,Chiang Mai,40.0,CRM_LEGACY
+C-00425,Anan Charoensuk,anan.charoensuk425@example.com,084-427-4077,08-Nov-2022,regular,CNX,26.0,CRM_V2
+C-00721,Thanapon Sukjai,thanapon.sukjai721@example.com,+66830861286,16/10/2023,Vip,Chonburi,7.0,CRM_LEGACY
+C-00478,Anan Thongdee,,086-506-8301,02/12/2022,new, Khon Kaen ,12.0,CRM_V2
+C-00044,Waree Sukjai,waree.sukjai44@example.com,081-009-1253,07/16/2022,regular,HKT,4.0,CRM_LEGACY
+C-00662,Siriporn Suksawat,siriporn.suksawat662@example.com,081-159-2347,17/05/2022,Vip,Bangkok,1.0,CRM_V2
+C-00636,Somchai Wongsawat,somchai.wongsawat636@example.com,+66825287094,26/06/2023,,Pattaya,5.0,CRM_V2
+C-00529,Pim Kaewmanee,pim.kaewmanee529@example.com,081-387-4087,29-Mar-2024,vip,ภูเก็ต,17.0,CRM_V2
+C-00484,Thanapon Boonmee,thanapon.boonmee484@example.com,0830646017,17/05/2022,1,BKK,20.0,CRM_LEGACY_MIGRATED
+C-00219,Waree Boonmee,waree.boonmee219@example.com,0835375933,2023-06-24,regular,เชียงใหม่,10.0,CRM_V2
+C-00443,Somsak Kaewmanee,somsak.kaewmanee443@example.com,+66899020743,23/01/2022,1,Chonburi,15.0,CRM_LEGACY
+C-00758,Anan Charoensuk,anan.charoensuk758@example.com,0869392969,20/07/2022,REGULAR,Pattaya,3.0,CRM_V2
+C-00610,Siriporn Suksawat,siriporn.suksawat610@example.com,+66814108657,04/12/2023,regular,BKK,28.0,CRM_V2
+C-00486,Waree Chaiyaporn,waree.chaiyaporn486@example.com,082-254-8219,18/06/2022,N/A,เชียงใหม่,12.0,CRM_V2
+C-00126,Thanapon Wongsawat,,+66871072146,2024-03-07,New,CHONBURI,28.0,CRM_V2
+C-00745,Somchai Phanuwat,somchai.phanuwat745@example.com,+66838926063,15/04/2022,regular,ชลบุรี,-14.0,CRM_V2
+C-00062,Somsak Rattanakul,somsak.rattanakul62@example.com,+66809867128,01/02/2022,Regular,ขอนแก่น,25.0,CRM_LEGACY_MIGRATED
+C-00082,Thanapon Rattanakul,thanapon.rattanakul82@example.com,0809489087,04/27/2022,New,ชลบุรี,5.0,CRM_LEGACY
+C-00681,Wichai Thongdee,wichai.thongdee681@example.com,0831966039,29/06/2022,NEW,BKK,9.0,CRM_V2
+C-00325,Preecha Rattanakul,preecha.rattanakul325@example.com,+66888728096,2023-09-17,Vip,HKT,4.0,CRM_V2
+C-00386,Preecha Thongdee,preecha.thongdee386@example.com,0833614459,2023-12-14,Regular,กรุงเทพ,16.0,CRM_LEGACY
+C-00214,Preecha Thongdee,preecha.thongdee214@example.com,+66819919935,01/02/2024,Regular,CNX,12.0,CRM_LEGACY
+C-00057,Preecha Thongdee,PREECHA.THONGDEE57@EXAMPLE.COM,+66879563937,28/09/2022,REGULAR,bangkok,21.0,CRM_V2
+C-00020,Waree Phanuwat,waree.phanuwat20@example.com,0871419502,20/02/2023,REGULAR,Phuket,25.0,CRM_V2
+C-00788,Pim Suksawat,pim.suksawat788@example.com,0828743712,06/25/2022,1,HKT,31.0,CRM_V2
+C-00087,Kittipong Sukjai,kittipong.sukjai87@example.com,084-211-6793,28-Feb-2023,regular,CNX,4.0,CRM_LEGACY
+C-00650,Pim Phanuwat,pim.phanuwat650@example.com,0827914957,2024-04-08,regular,ชลบุรี,5.0,CRM_V2
+C-00317,Thanapon Wongsawat,thanapon.wongsawat317@example.com,0857506592,24-Sep-2023,Regular,HKT,12.0,CRM_LEGACY
+C-00035,Pim Wongsawat,pim.wongsawat35@example.com,0815509941,01/08/2023,new,Phuket,31.0,CRM_V2
+C-00139,Chai Thongdee,chai.thongdee139@example.com,0853434602,2022-09-07, VIP ,CNX,6.0,CRM_V2
+C-00589,Somsak Sukjai,somsak.sukjai589@example.com,+66871826041,22/11/2022,N/A,Pattaya,9.0,CRM_LEGACY
+C-00499,Pim Sukjai,pim.sukjai499@example.com,+66802785633,20/05/2024,New,Khon Kaen,40.0,CRM_V2
+C-00539,Nattaya Wongsawat,nattaya.wongsawat539@example.com,084-343-1101,2022-12-31,NEW,Bangkok,31.0,CRM_V2
+C-00556,Siriporn Charoensuk,siriporn.charoensuk556@example.com,083-120-1164,22-Mar-2024,regular,Bangkok,16.0,CRM_V2
+C-00097,Malee Chaiyaporn,malee.chaiyaporn97@example.com,+66885093957,12/02/2022,,Phuket,36.0,CRM_V2
+C-00084,Malee Phanuwat,malee.phanuwat84 at example.com,0834235523,2024-03-30,REGULAR,ขอนแก่น,11.0,CRM_LEGACY_MIGRATED
+C-00447,Waree Wongsawat,waree.wongsawat447@example.com,0837904856,06/13/2023,Regular,Bangkok,21.0,CRM_V2
+C-00475,Ratana Kaewmanee,ratana.kaewmanee475@example.com,+66813540677,07/01/2023, Regular,HKT,3.0,CRM_V2
+C-00367,Ratana Wongsawat,ratana.wongsawat367@example.com,087-075-6919,07-Jul-2022,Vip,Khon Kaen,30.0,CRM_V2
+C-00698,Thanapon Rattanakul,thanapon.rattanakul698@example.com,+66831556789,22-Mar-2023,REGULAR,เชียงใหม่,36.0,CRM_LEGACY_MIGRATED
+C-00586,Pim Kaewmanee, pim.kaewmanee586@example.com  ,0860484950,05-Apr-2022,New,HKT,36.0,CRM_V2
+C-00770,Anan Thongdee,anan.thongdee770@example.com,+66870995776,2022-08-29,N/A,BKK,17.0,CRM_LEGACY_MIGRATED
+C-00761,Nattaya Thongdee,nattaya.thongdee761@example.com,0899936893,2023-05-16,Vip,กรุงเทพ,,CRM_V2
+C-00402,Thanapon Chaiyaporn,thanapon.chaiyaporn402@example.com,0858214807,2022-02-26,3,ชลบุรี,32.0,CRM_V2
+C-00760,Suda Kaewmanee,suda.kaewmanee760 at example.com,+66827003969,20/05/2024, VIP ,Chiang Mai,22.0,CRM_V2
+C-00393,Anan Sukjai,anan.sukjai393@example.com,+66888111193,26/06/2023,New,Chiang Mai,22.0,CRM_LEGACY
+C-00771,Thanapon Rattanakul,thanapon.rattanakul771@example.com,089-613-1875,24-Jun-2023,Regular,BKK,14.0,CRM_V2
+C-00746,Chai Suksawat,chai.suksawat746@example.com,085-854-9646,01/05/2024, Regular,HKT,-38.0,CRM_V2
+C-00272,Malee Charoensuk,malee.charoensuk272@example.com,0802129590,02-Jan-2023,regular,Chonburi,39.0,CRM_V2
+C-00507,Wichai Wongsawat,wichai.wongsawat507@example.com,+66812233291,2023-07-25,regular,ชลบุรี,28.0,CRM_V2
+C-00453,Somsak Sukjai,somsak.sukjai453@example.com,088-797-8599,01/04/2022,REGULAR,ภูเก็ต,37.0,CRM_LEGACY
+C-00435,Kittipong Rattanakul,kittipong.rattanakul435@example.com,089-514-8817,15/01/2024,2,bangkok,40.0,CRM_LEGACY_MIGRATED
+C-00649,Kittipong Suksawat,kittipong.suksawat649@example.com,081-955-9467,14/07/2023,New,HKT,37.0,CRM_LEGACY_MIGRATED
+C-00562,Suda Chaiyaporn,suda.chaiyaporn562@example.com,087-930-6394,12/06/2022,New,BANGKOK,3.0,CRM_LEGACY_MIGRATED
+C-00208,Siriporn Rattanakul,siriporn.rattanakul208@example.com,087-134-7523,2022-04-01,regular,Chiang Mai,28.0,CRM_V2
+C-00320,Thanapon Rattanakul,thanapon.rattanakul320@example.com,+66840629397,03/26/2023,Vip,BKK,6.0,CRM_LEGACY
+C-00541,Waree Boonmee,dup_pim.suksawat541@example.com,+66862020684,29/10/2022,3, CNX ,14.0,CRM_V2
+C-00133,Anan Chaiyaporn,ANAN.CHAIYAPORN133@EXAMPLE.COM,+66844148338,05-Aug-2022,Regular,ชลบุรี,4.0,CRM_LEGACY
+C-00051,Malee Wongsawat,malee.wongsawat51@example.com,080-790-5341,25/05/2022,Regular,กรุงเทพ,21.0,CRM_V2
+C-00239,Anan Kaewmanee,anan.kaewmanee239@example.com,+66895887436,19/08/2022,New,Chonburi,31.0,CRM_V2
+C-00565,Nattaya Boonmee,nattaya.boonmee565@example.com,089-031-6729,21/04/2024,Regular,Khon Kaen,10.0,CRM_V2
+C-00593,Somchai Phanuwat,somchai.phanuwat593@example.com,089-472-9037,2023-10-24,N/A,bangkok,16.0,CRM_LEGACY
+C-00451,Kittipong Rattanakul,kittipong.rattanakul451@example.com,086-221-9272,21-May-2022,1,ภูเก็ต,,CRM_LEGACY_MIGRATED
+C-00032,Chai Chaiyaporn,chai.chaiyaporn32@example.com,087-521-6695,11/03/2023,,Phuket,,CRM_V2
+C-00122,Nattaya Chaiyaporn,nattaya.chaiyaporn122@example.com,+66828350253,2023-09-27,regular,HKT,33.0,CRM_V2
+C-00212,Ratana Phanuwat,ratana.phanuwat212@example.com,0895709347,2023-06-12,REGULAR,เชียงใหม่,20.0,CRM_V2
+C-00352,Anan Rattanakul,anan.rattanakul352@example.com,087-212-2462,03/12/2024, Regular,Chiang Mai,13.0,CRM_LEGACY
+C-00455,Somchai Kaewmanee,somchai.kaewmanee455@example.com,0826301728,2023-10-13,3,BANGKOK,40.0,CRM_V2
+C-00303,Somchai Charoensuk,somchai.charoensuk303@example.com,+66824456684,2024-03-31,Regular,Bangkok,26.0,CRM_V2
+C-00709,Kittipong Suksawat,kittipong.suksawat709@example.com,+66872216944,25/02/2023,Regular,BKK,10.0,CRM_V2
+C-00089,Pim Rattanakul,pim.rattanakul89@example.com,+66877192955,14/02/2022,regular,Bangkok,3.0,CRM_V2
+C-00326,Thanapon Sukjai,thanapon.sukjai326@example.com,+66882244010,25/02/2022,new,ชลบุรี,7.0,CRM_V2
+C-00324,Pim Sukjai,pim.sukjai324@example.com,+66899047609,23/04/2023,regular,Pattaya,5.0,CRM_LEGACY
+C-00256,Wichai Sukjai,wichai.sukjai256@example.com,084-559-4171,2022-08-30,New,Khon Kaen,,CRM_V2
+C-00571,Nattaya Boonmee,nattaya.boonmee571@example.com,+66883345721,06/06/2023, Regular,Pattaya,4.0,CRM_V2
+C-00546,Chai Boonmee,chai.boonmee546@example.com,0820223604,13/12/2022,VIP,ขอนแก่น,21.0,CRM_V2
+C-00551,Wichai Sukjai,wichai.sukjai551@example.com,080-093-3586,2022-05-07,Regular,Phuket,37.0,CRM_V2
+C-00360,Waree Phanuwat,waree.phanuwat360@example.com,+66868560693,30-May-2023,NEW,Chiang Mai,17.0,CRM_V2
+C-00052,Anan Thongdee,anan.thongdee52@example.com,+66814264603,06/04/2024,regular,Phuket,27.0,CRM_V2
+C-00773,Ratana Thongdee,ratana.thongdee773@example.com,+66803158214,05/04/2024, Regular,HKT,1.0,CRM_LEGACY
+C-00103,Siriporn Rattanakul,siriporn.rattanakul103@example.com,+66814345559,2023-03-31,Regular,ขอนแก่น,26.0,CRM_V2
+C-00196,Thanapon Kaewmanee,thanapon.kaewmanee196 at example.com,089-214-0002,18-Jul-2023,Regular,ภูเก็ต,12.0,CRM_LEGACY_MIGRATED
+C-00680,Ratana Suksawat,ratana.suksawat680@example.com,0847564914,16-Apr-2023,NEW,CNX,1.0,CRM_V2
+C-00629,Chai Sukjai,chai.sukjai629@example.com,0877764555,08/01/2022,REGULAR,BKK,,CRM_LEGACY
+C-00125,Anan Boonmee,anan.boonmee125@example.com,083-211-6860,02/01/2024,Regular,กรุงเทพ,20.0,CRM_LEGACY_MIGRATED
+C-00405,Somchai Charoensuk,somchai.charoensuk405@example.com,0804489090,16-Jun-2022,,ชลบุรี,8.0,CRM_V2
+C-00731,Ratana Charoensuk,RATANA.CHAROENSUK731@EXAMPLE.COM,0833620661,01/02/2024,new,ชลบุรี,40.0,CRM_LEGACY
+C-00288,Siriporn Phanuwat,siriporn.phanuwat288@example.com,086-761-4602,2023-07-16,N/A,กรุงเทพ,22.0,CRM_V2
+C-00048,Thanapon Sukjai, thanapon.sukjai48@example.com  ,086-026-5395,2023-01-01,N/A,bangkok,6.0,CRM_V2
+C-00726,Wichai Kaewmanee,wichai.kaewmanee726@example.com,0878450025,18/03/2022, Regular,กรุงเทพ,36.0,CRM_V2
+C-00588,Siriporn Suksawat,siriporn.suksawat588@example.com,0828745346,06/27/2023,regular,Phuket,26.0,CRM_V2
+C-00608,Malee Phanuwat,malee.phanuwat608@example.com,+66889656070,14/06/2023,,เชียงใหม่,25.0,CRM_LEGACY
+C-00434,Suda Wongsawat,suda.wongsawat434@example.com,0880187595,02/06/2022,Regular,BANGKOK,37.0,CRM_V2
+C-00675,Pim Wongsawat,pim.wongsawat675@example.com,081-486-5350,2022-05-21,Regular,Chonburi,38.0,CRM_LEGACY
+C-00264,Suda Suksawat,suda.suksawat264@example.com,+66831833239,04/03/2024,new,Khon Kaen,31.0,CRM_LEGACY_MIGRATED
+C-00361,Waree Rattanakul,waree.rattanakul361@example.com,+66866136788,02/01/2023,Vip,ภูเก็ต,5.0,CRM_LEGACY_MIGRATED
+C-00076,Preecha Rattanakul,preecha.rattanakul76@example.com,+66819373971,2023-04-17,,Pattaya,28.0,CRM_LEGACY_MIGRATED
+C-00467,Thanapon Sukjai,thanapon.sukjai467@example.com,0872189870,2023-01-16, Regular,Chiang Mai,14.0,CRM_V2
+C-00300,Wichai Suksawat,wichai.suksawat300@example.com,0837748398,25/11/2023,Regular,Bangkok,11.0,CRM_V2
+C-00535,Suda Boonmee,suda.boonmee535@example.com,088-272-2548,08/03/2024, Regular,ภูเก็ต,31.0,CRM_V2
+C-00585,Somsak Charoensuk,somsak.charoensuk585@example.com,088-829-7609,06/12/2023,N/A, BKK ,2.0,CRM_V2
+C-00494,Wichai Sukjai,wichai.sukjai494@example.com,084-047-1895,03/06/2022,regular,เชียงใหม่,,CRM_V2
+C-00528,Wichai Thongdee,wichai.thongdee528@example.com,089-068-2304,2023-11-22, Regular,ชลบุรี,2.0,CRM_V2
+C-00169,Kittipong Thongdee,kittipong.thongdee169@example.com,0805350277,04/06/2023,regular,Pattaya,-23.0,CRM_LEGACY
