@@ -32,49 +32,76 @@ OUT_DIR.mkdir(parents=True, exist_ok=True)
 # ---------------------------------------------------------------------------
 
 START_DATE = datetime(2024, 6, 1)
-N_DAYS = 90
+N_DAYS = 365
 DATES = [START_DATE + timedelta(days=i) for i in range(N_DAYS)]
 
 # base_daily_budget is calibrated so per-campaign ROAS lands in a believable
 # ~2x-7x range against this dataset's POS revenue scale (real campaigns rarely
 # sustain double-digit ROAS) - see README Step 4 findings for the actual numbers.
-CAMPAIGNS = [
-    {
-        "campaign_id": "SUMMER_PROMO_2024_TH",
-        "short_code": "SP24",
-        "platforms": ["LINE", "Facebook"],
-        "active_days": (5, 35),      # (start_day_idx, end_day_idx)
-        "base_daily_budget": 75000,
-    },
-    {
-        "campaign_id": "BACK_TO_SCHOOL_2024",
-        "short_code": "BTS24",
-        "platforms": ["LINE", "Google"],
-        "active_days": (30, 60),
-        "base_daily_budget": 60000,
-    },
-    {
-        "campaign_id": "FLASH_SALE_JULY_2024",
-        "short_code": "FSJ24",
-        "platforms": ["LINE"],
-        "active_days": (20, 27),
-        "base_daily_budget": 125000,
-    },
-    {
-        "campaign_id": "NEW_USER_ACQUISITION_Q3",
-        "short_code": "NUA24",
-        "platforms": ["Facebook", "Google"],
-        "active_days": (0, 90),
-        "base_daily_budget": 40000,
-    },
-    {
-        "campaign_id": "MEMBER_EXCLUSIVE_AUG_2024",
-        "short_code": "MEA24",
-        "platforms": ["LINE", "Facebook", "Google"],
-        "active_days": (60, 85),
-        "base_daily_budget": 90000,
-    },
+#
+# Campaigns are built programmatically from two kinds of templates rather than
+# hand-listed, so the dataset can scale to a full year without hand-authoring
+# dozens of near-duplicate entries:
+#   - "always-on" templates run continuously for the whole date range (acquisition,
+#     loyalty, retargeting, winback - the kind of campaigns that never really stop)
+#   - "seasonal" templates recur several times a year as short waves (promos,
+#     back-to-school, flash sales, member-exclusive events), spread evenly across
+#     the date range with a deterministic (non-random) schedule so the dataset
+#     stays reproducible.
+
+# always-on templates get disproportionately more attribution than seasonal ones
+# simply by being active every day of the year, so their budgets are calibrated
+# higher to keep ROAS in the same ~2x-7x band as everything else.
+_ALWAYS_ON_TEMPLATES = [
+    {"name": "NEW_USER_ACQUISITION", "platforms": ["Facebook", "Google"], "base_daily_budget": 61000},
+    {"name": "LOYALTY_MEMBER_PROGRAM", "platforms": ["LINE", "Facebook", "Google"], "base_daily_budget": 55000},
+    {"name": "RETARGETING_ALWAYS_ON", "platforms": ["LINE", "Facebook"], "base_daily_budget": 58000},
+    {"name": "RETENTION_WINBACK", "platforms": ["Facebook", "Google"], "base_daily_budget": 58000},
 ]
+_SEASONAL_TEMPLATES = [
+    {"name": "SUMMER_PROMO", "duration": 30, "platforms": ["LINE", "Facebook"], "base_daily_budget": 75000, "waves": 8},
+    {"name": "BACK_TO_SCHOOL", "duration": 30, "platforms": ["LINE", "Google"], "base_daily_budget": 60000, "waves": 8},
+    {"name": "FLASH_SALE", "duration": 7, "platforms": ["LINE"], "base_daily_budget": 125000, "waves": 12},
+    {"name": "MEMBER_EXCLUSIVE", "duration": 25, "platforms": ["LINE", "Facebook", "Google"], "base_daily_budget": 90000, "waves": 8},
+]
+
+
+def _initials(name: str, length: int) -> str:
+    return "".join(word[0] for word in name.split("_"))[:length].upper()
+
+
+def _evenly_spaced_starts(n_waves: int, duration: int) -> list:
+    """n_waves start-day indices spread evenly across the full date range."""
+    if n_waves == 1:
+        return [0]
+    span = N_DAYS - duration
+    return [round(i * span / (n_waves - 1)) for i in range(n_waves)]
+
+
+def build_campaigns() -> list:
+    campaigns = []
+    for tmpl in _ALWAYS_ON_TEMPLATES:
+        campaigns.append({
+            "campaign_id": tmpl["name"],
+            "short_code": _initials(tmpl["name"], 4),
+            "platforms": tmpl["platforms"],
+            "active_days": (0, N_DAYS),
+            "base_daily_budget": tmpl["base_daily_budget"],
+        })
+    for tmpl in _SEASONAL_TEMPLATES:
+        abbrev = _initials(tmpl["name"], 3)
+        for i, start in enumerate(_evenly_spaced_starts(tmpl["waves"], tmpl["duration"]), start=1):
+            campaigns.append({
+                "campaign_id": f"{tmpl['name']}_W{i:02d}",
+                "short_code": f"{abbrev}{i:02d}",
+                "platforms": tmpl["platforms"],
+                "active_days": (start, start + tmpl["duration"]),
+                "base_daily_budget": tmpl["base_daily_budget"],
+            })
+    return campaigns
+
+
+CAMPAIGNS = build_campaigns()
 
 REGION_VARIANTS = {
     "Bangkok": ["Bangkok", "กรุงเทพ", "BKK", "bangkok"],
@@ -463,17 +490,26 @@ def generate_ad_platform_report(attributed_order_counts):
 # ---------------------------------------------------------------------------
 
 def main():
-    crm_df = generate_crm_customers(n=800)
-    pos_df, attributed_order_counts = generate_pos_transactions(crm_df, n_base=5000)
+    crm_df = generate_crm_customers(n=9700)
+    pos_df, attributed_order_counts = generate_pos_transactions(crm_df, n_base=32000)
     ad_df = generate_ad_platform_report(attributed_order_counts)
+
+    # a real business running 40 campaigns would have a reference table mapping
+    # short codes to full campaign ids - POS only carries the short code, the ad
+    # platform report only carries the full id, and neither carries both.
+    campaign_registry = pd.DataFrame(
+        [{"short_code": c["short_code"], "campaign_id": c["campaign_id"]} for c in CAMPAIGNS]
+    )
 
     crm_df.to_csv(OUT_DIR / "crm_customers.csv", index=False)
     pos_df.to_csv(OUT_DIR / "pos_transactions.csv", index=False)
     ad_df.to_csv(OUT_DIR / "ad_platform_report.csv", index=False)
+    campaign_registry.to_csv(OUT_DIR / "campaign_registry.csv", index=False)
 
     print(f"crm_customers.csv      -> {len(crm_df):,} rows")
     print(f"pos_transactions.csv   -> {len(pos_df):,} rows")
     print(f"ad_platform_report.csv -> {len(ad_df):,} rows")
+    print(f"campaign_registry.csv  -> {len(campaign_registry):,} rows")
     print(f"Saved to: {OUT_DIR}")
 
 

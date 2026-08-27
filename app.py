@@ -63,7 +63,11 @@ else:
     start_date, end_date = min_date, max_date
 
 campaign_options = sorted(unified_sales["campaign_id"].dropna().unique())
-selected_campaigns = st.sidebar.multiselect("Campaigns", campaign_options, default=campaign_options)
+campaign_selection = st.sidebar.multiselect(
+    "Campaigns", campaign_options, default=[],
+    help="Leave empty to include all campaigns — with 40+ campaigns, pre-selecting all as pills isn't readable.",
+)
+selected_campaigns = campaign_selection if campaign_selection else campaign_options
 
 mask = (
     (unified_sales["transaction_datetime"].dt.date >= start_date)
