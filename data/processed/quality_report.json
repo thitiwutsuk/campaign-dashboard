@@ -1,44 +1,44 @@
 {
   "crm_customers": {
-    "input_rows": 9991,
-    "exact_duplicate_rows_dropped": 97,
-    "duplicate_cust_id_rows_dropped": 194,
-    "missing_or_invalid_email": 454,
+    "input_rows": 824,
+    "exact_duplicate_rows_dropped": 8,
+    "duplicate_cust_id_rows_dropped": 16,
+    "missing_or_invalid_email": 32,
     "invalid_phone": 0,
     "unparseable_signup_date": 0,
-    "missing_or_unmapped_segment": 1226,
+    "missing_or_unmapped_segment": 116,
     "missing_or_unmapped_region": 0,
-    "negative_orders_corrected": 182,
-    "missing_orders": 799,
-    "output_rows": 9700
+    "negative_orders_corrected": 11,
+    "missing_orders": 68,
+    "output_rows": 800
   },
   "pos_transactions": {
-    "input_rows": 148257,
-    "duplicate_transaction_id_rows_dropped": 1467,
-    "usd_rows_converted": 2932,
-    "discount_pct_out_of_range_clipped": 556,
-    "return_rows": 2929,
+    "input_rows": 11195,
+    "duplicate_transaction_id_rows_dropped": 110,
+    "usd_rows_converted": 215,
+    "discount_pct_out_of_range_clipped": 46,
+    "return_rows": 244,
     "unmapped_payment_method": 0,
-    "missing_or_unmapped_store_channel": 12430,
-    "no_campaign_attribution": 87909,
-    "walk_in_no_customer_ref": 22149,
+    "missing_or_unmapped_store_channel": 941,
+    "no_campaign_attribution": 6675,
+    "walk_in_no_customer_ref": 1715,
     "unparseable_transaction_datetime": 0,
-    "output_rows": 146790
+    "output_rows": 11085
   },
   "ad_platform_report": {
-    "input_rows": 4810,
-    "ctr_missing_or_unparseable": 35,
-    "usd_rows_converted": 170,
+    "input_rows": 387,
+    "ctr_missing_or_unparseable": 6,
+    "usd_rows_converted": 16,
     "unparseable_report_date": 0,
     "unmapped_platform": 0,
-    "negative_spend_rows": 27,
-    "tracking_anomaly_rows": 35,
-    "duplicate_daily_export_rows_dropped": 68,
-    "output_rows": 4742
+    "negative_spend_rows": 3,
+    "tracking_anomaly_rows": 6,
+    "duplicate_daily_export_rows_dropped": 7,
+    "output_rows": 380
   },
   "reconciliation": {
-    "orphan_customer_ref_rows": 3764,
+    "orphan_customer_ref_rows": 286,
     "unmapped_campaign_code_rows": 0,
-    "output_rows": 146790
+    "output_rows": 11085
   }
 }

@@ -33,7 +33,6 @@ def main():
     crm_raw = pd.read_csv(RAW_DIR / "crm_customers.csv")
     pos_raw = pd.read_csv(RAW_DIR / "pos_transactions.csv")
     ad_raw = pd.read_csv(RAW_DIR / "ad_platform_report.csv")
-    campaign_registry = pd.read_csv(RAW_DIR / "campaign_registry.csv")
 
     crm_clean, crm_report = clean_crm(crm_raw)
     pos_clean, pos_report = clean_pos(pos_raw)
@@ -43,13 +42,13 @@ def main():
     print_report("Step 3 — pos_transactions cleaning", pos_report)
     print_report("Step 3 — ad_platform_report cleaning", ad_report)
 
-    unified_sales, join_report = build_unified_sales(pos_clean, crm_clean, campaign_registry)
+    unified_sales, join_report = build_unified_sales(pos_clean, crm_clean)
     campaign_summary = build_campaign_summary(unified_sales, ad_clean)
 
     print_report("Step 4 — reconciliation / join layer", join_report)
-    print(f"\nStep 4 — per-campaign ROI ({len(campaign_summary)} campaigns, showing top/bottom 5 by ROAS)")
+    print("\nStep 4 — per-campaign ROI")
     print(
-        pd.concat([campaign_summary.head(5), campaign_summary.tail(5)])[
+        campaign_summary[
             ["campaign_id", "ad_spend_thb", "attributed_revenue_thb", "roas", "roi_pct"]
         ].to_string(index=False)
     )

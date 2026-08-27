@@ -6,19 +6,25 @@ and to ad platform spend (`campaign_code` -> `campaign_id`), then rolls the
 result up into a per-campaign ROI table — the core business question this
 dataset is built to answer.
 
-The campaign_code -> campaign_id mapping comes from `data/raw/campaign_registry.csv`,
-a small reference table a real analyst would get from the marketing team, since
-it isn't stored in either raw export — POS only carries the short code, the ad
-platform report only carries the full id.
+CAMPAIGN_CODE_MAP is a small reference table (short code -> full campaign id)
+that a real analyst would get from the marketing team, since it isn't stored
+in either raw export — POS only carries the short code, the ad platform
+report only carries the full id.
 """
 
 import numpy as np
 import pandas as pd
 
+CAMPAIGN_CODE_MAP = {
+    "SP24": "SUMMER_PROMO_2024_TH",
+    "BTS24": "BACK_TO_SCHOOL_2024",
+    "FSJ24": "FLASH_SALE_JULY_2024",
+    "NUA24": "NEW_USER_ACQUISITION_Q3",
+    "MEA24": "MEMBER_EXCLUSIVE_AUG_2024",
+}
 
-def build_unified_sales(
-    pos_clean: pd.DataFrame, crm_clean: pd.DataFrame, campaign_registry: pd.DataFrame
-) -> tuple[pd.DataFrame, dict]:
+
+def build_unified_sales(pos_clean: pd.DataFrame, crm_clean: pd.DataFrame) -> tuple[pd.DataFrame, dict]:
     """POS transactions enriched with customer info and a resolved campaign_id."""
     report = {}
 
@@ -32,8 +38,7 @@ def build_unified_sales(
     report["orphan_customer_ref_rows"] = int((has_ref & df["cust_id"].isna()).sum())
     df = df.drop(columns="cust_id")
 
-    code_map = campaign_registry.set_index("short_code")["campaign_id"]
-    df["campaign_id"] = df["campaign_code"].map(code_map)
+    df["campaign_id"] = df["campaign_code"].map(CAMPAIGN_CODE_MAP)
     unmapped = df["campaign_code"].notna() & df["campaign_id"].isna()
     report["unmapped_campaign_code_rows"] = int(unmapped.sum())
 
