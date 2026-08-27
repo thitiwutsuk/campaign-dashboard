@@ -200,14 +200,7 @@ page sourced directly from `quality_report.json` — so the "what was cleaned" n
 from what the pipeline actually did. A sidebar date-range and campaign filter applies across the
 Overview/Trend/Segment tabs.
 
-A **Key Insights** callout above the tabs auto-generates 5 bullet points (best/weakest campaign by
-ROAS, best day to sell, preferred payment method, attribution gap) directly from the filtered data —
-nothing here is hand-typed either, so it stays correct as the date-range/campaign filters change.
-The Sales Trend tab adds day-of-week and month-over-month revenue charts (meaningful now that the
-dataset spans a full year), and Customer Segments adds a payment-method breakdown plus a
-segment-normalized payment-mix chart.
-
-**Result:** verified locally with `streamlit run app.py` — all 5 tabs render, 11 charts + 5 tables
+**Result:** verified locally with `streamlit run app.py` — all 5 tabs render, 7 charts + 5 tables
 populate, zero exceptions and zero browser console errors, including at the current 40-campaign /
 163,058-row scale.
 
