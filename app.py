@@ -30,6 +30,14 @@ def style_fig(fig):
     return fig
 
 
+def compact_thb(value: float) -> str:
+    if abs(value) >= 1_000_000:
+        return f"฿{value / 1_000_000:,.1f}M"
+    if abs(value) >= 1_000:
+        return f"฿{value / 1_000:,.0f}K"
+    return f"฿{value:,.0f}"
+
+
 @st.cache_data
 def load_data():
     unified_sales = pd.read_csv(DATA_DIR / "unified_sales.csv", parse_dates=["transaction_datetime"])
@@ -76,6 +84,40 @@ mask = (
 sales = unified_sales[mask].copy()
 sales_no_returns = sales[~sales["is_return"]]
 
+# --- Key Insights -------------------------------------------------------------
+if not sales_no_returns.empty and not campaign_summary.empty:
+    best_campaign = campaign_summary.loc[campaign_summary["roas"].idxmax()]
+    worst_campaign = campaign_summary.loc[campaign_summary["roas"].idxmin()]
+
+    dow_revenue = (
+        sales_no_returns.assign(day_of_week=sales_no_returns["transaction_datetime"].dt.day_name())
+        .groupby("day_of_week")["net_amount_thb"].mean()
+    )
+    best_day = dow_revenue.idxmax()
+
+    payment_revenue = sales_no_returns.groupby("payment_method")["net_amount_thb"].sum().sort_values(ascending=False)
+    top_payment = payment_revenue.index[0]
+    top_payment_share = payment_revenue.iloc[0] / payment_revenue.sum() * 100
+
+    unattributed_share = sales["campaign_id"].isna().mean() * 100
+
+    st.markdown(
+        f"""
+        <div style="background:{LINE_GREEN}15; border-left:4px solid {LINE_GREEN}; border-radius:6px;
+                    padding:1rem 1.25rem; margin-bottom:1.5rem; font-family:{CHART_FONT};">
+            <div style="font-weight:700; font-size:1.05rem; margin-bottom:0.4rem;">Key Insights</div>
+            <ul style="margin:0; padding-left:1.2rem; line-height:1.8; font-size:0.92rem;">
+                <li><b>Best campaign:</b> {best_campaign["campaign_id"]} at {best_campaign["roas"]:.1f}x ROAS</li>
+                <li><b>Weakest campaign:</b> {worst_campaign["campaign_id"]} at {worst_campaign["roas"]:.1f}x ROAS</li>
+                <li><b>Best day to sell:</b> {best_day}, averaging {compact_thb(dow_revenue.max())} in daily revenue</li>
+                <li><b>Preferred payment method:</b> {top_payment}, driving {top_payment_share:.0f}% of revenue</li>
+                <li><b>Attribution gap:</b> {unattributed_share:.0f}% of transactions in range carry no campaign code at all</li>
+            </ul>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
 tab_overview, tab_trend, tab_roi, tab_segments, tab_quality = st.tabs(
     ["Overview", "Sales Trend", "Campaign ROI", "Customer Segments", "Data Quality"]
 )
@@ -88,13 +130,6 @@ with tab_overview:
     total_orders = sales["transaction_id"].nunique()
     total_customers = crm_clean["cust_id"].nunique()
     overall_roas = attributed_revenue / total_ad_spend if total_ad_spend else float("nan")
-
-    def compact_thb(value: float) -> str:
-        if abs(value) >= 1_000_000:
-            return f"฿{value / 1_000_000:,.1f}M"
-        if abs(value) >= 1_000:
-            return f"฿{value / 1_000:,.0f}K"
-        return f"฿{value:,.0f}"
 
     c1, c2, c3, c4, c5 = st.columns(5)
     c1.metric("Total Sales Revenue", compact_thb(total_revenue))
@@ -149,6 +184,35 @@ with tab_trend:
         color_discrete_map={"Attributed": LINE_GREEN, "Not attributed": LINE_GREY},
     )
     st.plotly_chart(style_fig(fig2), width="stretch")
+
+    col_dow, col_month = st.columns(2)
+    with col_dow:
+        st.subheader("Revenue by day of week")
+        dow_order = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+        by_dow = (
+            sales_no_returns.assign(day_of_week=sales_no_returns["transaction_datetime"].dt.day_name())
+            .groupby("day_of_week", as_index=False)["net_amount_thb"].sum()
+        )
+        by_dow["day_of_week"] = pd.Categorical(by_dow["day_of_week"], categories=dow_order, ordered=True)
+        by_dow = by_dow.sort_values("day_of_week")
+        fig_dow = px.bar(
+            by_dow, x="day_of_week", y="net_amount_thb",
+            labels={"net_amount_thb": "Revenue (THB)", "day_of_week": ""},
+            color_discrete_sequence=[LINE_GREEN],
+        )
+        st.plotly_chart(style_fig(fig_dow), width="stretch")
+    with col_month:
+        st.subheader("Revenue by month")
+        by_month = (
+            sales_no_returns.assign(month=sales_no_returns["transaction_datetime"].dt.to_period("M").astype(str))
+            .groupby("month", as_index=False)["net_amount_thb"].sum()
+        )
+        fig_month = px.bar(
+            by_month, x="month", y="net_amount_thb",
+            labels={"net_amount_thb": "Revenue (THB)", "month": ""},
+            color_discrete_sequence=[LINE_GREEN],
+        )
+        st.plotly_chart(style_fig(fig_month), width="stretch")
 
 # --- Campaign ROI -----------------------------------------------------------
 with tab_roi:
@@ -242,6 +306,38 @@ with tab_segments:
     st.caption(
         "Segment/region are only known for transactions linked to a CRM customer — walk-in sales "
         "and orphan customer_ref rows are excluded from these two charts."
+    )
+
+    col3, col4 = st.columns(2)
+    with col3:
+        st.subheader("Revenue by payment method")
+        by_payment = sales_no_returns.dropna(subset=["payment_method"]).groupby(
+            "payment_method", as_index=False
+        )["net_amount_thb"].sum()
+        fig_payment = px.pie(
+            by_payment, names="payment_method", values="net_amount_thb",
+            color_discrete_sequence=GREEN_RAMP,
+        )
+        st.plotly_chart(style_fig(fig_payment), width="stretch")
+    with col4:
+        st.subheader("Payment mix by customer segment")
+        seg_payment = (
+            sales_no_returns.dropna(subset=["customer_segment", "payment_method"])
+            .groupby(["customer_segment", "payment_method"], as_index=False)["net_amount_thb"].sum()
+        )
+        seg_payment["pct_of_segment"] = (
+            seg_payment["net_amount_thb"] / seg_payment.groupby("customer_segment")["net_amount_thb"].transform("sum") * 100
+        )
+        fig_seg_pay = px.bar(
+            seg_payment, x="customer_segment", y="pct_of_segment", color="payment_method", barmode="stack",
+            labels={"pct_of_segment": "% of segment revenue", "customer_segment": "", "payment_method": ""},
+            color_discrete_sequence=GREEN_RAMP,
+        )
+        st.plotly_chart(style_fig(fig_seg_pay), width="stretch")
+
+    st.caption(
+        "Payment mix is normalized to % of each segment's own revenue, so the comparison shows "
+        "preference patterns rather than which segment simply spends more."
     )
 
 # --- Data Quality -------------------------------------------------------------
